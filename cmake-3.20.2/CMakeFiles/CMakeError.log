@@ -1,0 +1,3498 @@
+Determining if compiler supports C11 _Thread_local failed with the following output:
+Change Dir: /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_beb39/fast && make  -f CMakeFiles/cmTC_beb39.dir/build.make CMakeFiles/cmTC_beb39.dir/build
+make[1]: Entering directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_beb39.dir/cm_c11_thread_local.c.o
+/usr/bin/gcc   -std=gnu11 -o CMakeFiles/cmTC_beb39.dir/cm_c11_thread_local.c.o -c /home/haihem/Bureau/books/vscode/cmake-3.20.2/Source/Checks/cm_c11_thread_local.c
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/Source/Checks/cm_c11_thread_local.c:1:15: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘int’
+ _Thread_local int i = 42;
+               ^
+make[1]: *** [CMakeFiles/cmTC_beb39.dir/cm_c11_thread_local.c.o] Error 1
+make[1]: Leaving directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+make: *** [cmTC_beb39/fast] Error 2
+
+
+
+Determining if compiler supports needed C++14 constructs failed with the following output:
+Change Dir: /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_5a15e/fast && make  -f CMakeFiles/cmTC_5a15e.dir/build.make CMakeFiles/cmTC_5a15e.dir/build
+make[1]: Entering directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_5a15e.dir/cm_cxx14_check.cpp.o
+/usr/bin/g++   -std=gnu++1y -o CMakeFiles/cmTC_5a15e.dir/cm_cxx14_check.cpp.o -c /home/haihem/Bureau/books/vscode/cmake-3.20.2/Source/Checks/cm_cxx14_check.cpp
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/Source/Checks/cm_cxx14_check.cpp: In function ‘int main()’:
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/Source/Checks/cm_cxx14_check.cpp:8:13: error: ‘cbegin’ is not a member of ‘std’
+   auto ai = std::cbegin(a);
+             ^
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/Source/Checks/cm_cxx14_check.cpp:11:13: error: ‘cend’ is not a member of ‘std’
+   auto bi = std::cend(b);
+             ^
+make[1]: *** [CMakeFiles/cmTC_5a15e.dir/cm_cxx14_check.cpp.o] Error 1
+make[1]: Leaving directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+make: *** [cmTC_5a15e/fast] Error 2
+
+
+
+Determining if compiler supports C++ make_unique failed with the following output:
+Change Dir: /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_35406/fast && make  -f CMakeFiles/cmTC_35406.dir/build.make CMakeFiles/cmTC_35406.dir/build
+make[1]: Entering directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_35406.dir/cm_cxx_make_unique.cxx.o
+/usr/bin/g++   -std=gnu++11 -o CMakeFiles/cmTC_35406.dir/cm_cxx_make_unique.cxx.o -c /home/haihem/Bureau/books/vscode/cmake-3.20.2/Source/Checks/cm_cxx_make_unique.cxx
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/Source/Checks/cm_cxx_make_unique.cxx: In function ‘int main()’:
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/Source/Checks/cm_cxx_make_unique.cxx:4:28: error: ‘make_unique’ is not a member of ‘std’
+   std::unique_ptr<int> u = std::make_unique<int>(0);
+                            ^
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/Source/Checks/cm_cxx_make_unique.cxx:4:45: error: expected primary-expression before ‘int’
+   std::unique_ptr<int> u = std::make_unique<int>(0);
+                                             ^
+make[1]: *** [CMakeFiles/cmTC_35406.dir/cm_cxx_make_unique.cxx.o] Error 1
+make[1]: Leaving directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+make: *** [cmTC_35406/fast] Error 2
+
+
+
+Determining if the environ exist failed with the following output:
+Change Dir: /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_18c9a/fast && make  -f CMakeFiles/cmTC_18c9a.dir/build.make CMakeFiles/cmTC_18c9a.dir/build
+make[1]: Entering directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_18c9a.dir/CheckSymbolExists.c.o
+/usr/bin/gcc   -std=gnu99 -o CMakeFiles/cmTC_18c9a.dir/CheckSymbolExists.c.o -c /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: ‘environ’ undeclared (first use in this function)
+   return ((int*)(&environ))[argc];
+                   ^
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+make[1]: *** [CMakeFiles/cmTC_18c9a.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+make: *** [cmTC_18c9a/fast] Error 2
+
+
+File /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdlib.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef environ
+  return ((int*)(&environ))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_7ecbc/fast && make  -f CMakeFiles/cmTC_7ecbc.dir/build.make CMakeFiles/cmTC_7ecbc.dir/build
+make[1]: Entering directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7ecbc.dir/src.c.o
+/usr/bin/gcc -DCMAKE_HAVE_LIBC_PTHREAD  -std=gnu99 -o CMakeFiles/cmTC_7ecbc.dir/src.c.o -c /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_7ecbc
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/Bootstrap.cmk/cmake -E cmake_link_script CMakeFiles/cmTC_7ecbc.dir/link.txt --verbose=1
+/usr/bin/gcc CMakeFiles/cmTC_7ecbc.dir/src.c.o -o cmTC_7ecbc 
+CMakeFiles/cmTC_7ecbc.dir/src.c.o: In function `main':
+src.c:(.text+0x31): undefined reference to `pthread_create'
+src.c:(.text+0x3d): undefined reference to `pthread_detach'
+src.c:(.text+0x49): undefined reference to `pthread_cancel'
+src.c:(.text+0x5d): undefined reference to `pthread_join'
+src.c:(.text+0x79): undefined reference to `pthread_atfork'
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTC_7ecbc] Error 1
+make[1]: Leaving directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+make: *** [cmTC_7ecbc/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_114f4/fast && make  -f CMakeFiles/cmTC_114f4.dir/build.make CMakeFiles/cmTC_114f4.dir/build
+make[1]: Entering directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_114f4.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -DCHECK_FUNCTION_EXISTS=pthread_create -std=gnu99 -o CMakeFiles/cmTC_114f4.dir/CheckFunctionExists.c.o -c /home/haihem/Bureau/books/vscode/cmake-3.20.2/Modules/CheckFunctionExists.c
+Linking C executable cmTC_114f4
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/Bootstrap.cmk/cmake -E cmake_link_script CMakeFiles/cmTC_114f4.dir/link.txt --verbose=1
+/usr/bin/gcc  -DCHECK_FUNCTION_EXISTS=pthread_create CMakeFiles/cmTC_114f4.dir/CheckFunctionExists.c.o -o cmTC_114f4  -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTC_114f4] Error 1
+make[1]: Leaving directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+make: *** [cmTC_114f4/fast] Error 2
+
+
+
+Checking whether CXX compiler has environ in stdlib.h failed to compile with the following output:
+Change Dir: /home/haihem/Bureau/books/vscode/cmake-3.20.2/Source/kwsys/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_8bdb2/fast && make  -f CMakeFiles/cmTC_8bdb2.dir/build.make CMakeFiles/cmTC_8bdb2.dir/build
+make[1]: Entering directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/Source/kwsys/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_8bdb2.dir/kwsysPlatformTestsCXX.cxx.o
+/usr/bin/g++ -DTEST_KWSYS_CXX_HAS_ENVIRON_IN_STDLIB_H  -std=gnu++11 -o CMakeFiles/cmTC_8bdb2.dir/kwsysPlatformTestsCXX.cxx.o -c /home/haihem/Bureau/books/vscode/cmake-3.20.2/Source/kwsys/kwsysPlatformTestsCXX.cxx
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/Source/kwsys/kwsysPlatformTestsCXX.cxx: In function ‘int main()’:
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/Source/kwsys/kwsysPlatformTestsCXX.cxx:53:13: error: ‘environ’ was not declared in this scope
+   char* e = environ[0];
+             ^
+make[1]: *** [CMakeFiles/cmTC_8bdb2.dir/kwsysPlatformTestsCXX.cxx.o] Error 1
+make[1]: Leaving directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/Source/kwsys/CMakeFiles/CMakeTmp'
+make: *** [cmTC_8bdb2/fast] Error 2
+
+
+
+Checking whether CXX compiler struct stat has st_mtimespec member failed to compile with the following output:
+Change Dir: /home/haihem/Bureau/books/vscode/cmake-3.20.2/Source/kwsys/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_6212c/fast && make  -f CMakeFiles/cmTC_6212c.dir/build.make CMakeFiles/cmTC_6212c.dir/build
+make[1]: Entering directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/Source/kwsys/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_6212c.dir/kwsysPlatformTestsCXX.cxx.o
+/usr/bin/g++ -DTEST_KWSYS_CXX_STAT_HAS_ST_MTIMESPEC  -std=gnu++11 -o CMakeFiles/cmTC_6212c.dir/kwsysPlatformTestsCXX.cxx.o -c /home/haihem/Bureau/books/vscode/cmake-3.20.2/Source/kwsys/kwsysPlatformTestsCXX.cxx
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/Source/kwsys/kwsysPlatformTestsCXX.cxx: In function ‘int main()’:
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/Source/kwsys/kwsysPlatformTestsCXX.cxx:26:15: error: ‘struct stat’ has no member named ‘st_mtimespec’
+   (void)stat1.st_mtimespec.tv_sec;
+               ^
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/Source/kwsys/kwsysPlatformTestsCXX.cxx:27:15: error: ‘struct stat’ has no member named ‘st_mtimespec’
+   (void)stat1.st_mtimespec.tv_nsec;
+               ^
+make[1]: *** [CMakeFiles/cmTC_6212c.dir/kwsysPlatformTestsCXX.cxx.o] Error 1
+make[1]: Leaving directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/Source/kwsys/CMakeFiles/CMakeTmp'
+make: *** [cmTC_6212c/fast] Error 2
+
+
+
+Determining if the function connect exists in the socket;dl failed with the following output:
+Change Dir: /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_12178/fast && make  -f CMakeFiles/cmTC_12178.dir/build.make CMakeFiles/cmTC_12178.dir/build
+make[1]: Entering directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_12178.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -w -DCHECK_FUNCTION_EXISTS=connect -std=gnu99 -o CMakeFiles/cmTC_12178.dir/CheckFunctionExists.c.o -c /home/haihem/Bureau/books/vscode/cmake-3.20.2/Modules/CheckFunctionExists.c
+Linking C executable cmTC_12178
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/Bootstrap.cmk/cmake -E cmake_link_script CMakeFiles/cmTC_12178.dir/link.txt --verbose=1
+/usr/bin/gcc  -w -DCHECK_FUNCTION_EXISTS=connect CMakeFiles/cmTC_12178.dir/CheckFunctionExists.c.o -o cmTC_12178  -lsocket -ldl 
+/usr/bin/ld: cannot find -lsocket
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTC_12178] Error 1
+make[1]: Leaving directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+make: *** [cmTC_12178/fast] Error 2
+
+
+
+Determining if the function recv exists in the network;dl failed with the following output:
+Change Dir: /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_2deb5/fast && make  -f CMakeFiles/cmTC_2deb5.dir/build.make CMakeFiles/cmTC_2deb5.dir/build
+make[1]: Entering directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2deb5.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -w -DCHECK_FUNCTION_EXISTS=recv -std=gnu99 -o CMakeFiles/cmTC_2deb5.dir/CheckFunctionExists.c.o -c /home/haihem/Bureau/books/vscode/cmake-3.20.2/Modules/CheckFunctionExists.c
+Linking C executable cmTC_2deb5
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/Bootstrap.cmk/cmake -E cmake_link_script CMakeFiles/cmTC_2deb5.dir/link.txt --verbose=1
+/usr/bin/gcc  -w -DCHECK_FUNCTION_EXISTS=recv CMakeFiles/cmTC_2deb5.dir/CheckFunctionExists.c.o -o cmTC_2deb5  -lnetwork -ldl 
+/usr/bin/ld: cannot find -lnetwork
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTC_2deb5] Error 1
+make[1]: Leaving directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+make: *** [cmTC_2deb5/fast] Error 2
+
+
+
+Determining if the RAND_status exist failed with the following output:
+Change Dir: /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_5ef8e/fast && make  -f CMakeFiles/cmTC_5ef8e.dir/build.make CMakeFiles/cmTC_5ef8e.dir/build
+make[1]: Entering directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5ef8e.dir/CheckSymbolExists.c.o
+/usr/bin/gcc   -w  -std=gnu99 -o CMakeFiles/cmTC_5ef8e.dir/CheckSymbolExists.c.o -c /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:7:19: error: ‘RAND_status’ undeclared (first use in this function)
+   return ((int*)(&RAND_status))[argc];
+                   ^
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:7:19: note: each undeclared identifier is reported only once for each function it appears in
+make[1]: *** [CMakeFiles/cmTC_5ef8e.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+make: *** [cmTC_5ef8e/fast] Error 2
+
+
+File /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef RAND_status
+  return ((int*)(&RAND_status))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the RAND_screen exist failed with the following output:
+Change Dir: /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_ae0f3/fast && make  -f CMakeFiles/cmTC_ae0f3.dir/build.make CMakeFiles/cmTC_ae0f3.dir/build
+make[1]: Entering directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ae0f3.dir/CheckSymbolExists.c.o
+/usr/bin/gcc   -w  -std=gnu99 -o CMakeFiles/cmTC_ae0f3.dir/CheckSymbolExists.c.o -c /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:7:19: error: ‘RAND_screen’ undeclared (first use in this function)
+   return ((int*)(&RAND_screen))[argc];
+                   ^
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:7:19: note: each undeclared identifier is reported only once for each function it appears in
+make[1]: *** [CMakeFiles/cmTC_ae0f3.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+make: *** [cmTC_ae0f3/fast] Error 2
+
+
+File /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef RAND_screen
+  return ((int*)(&RAND_screen))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the RAND_egd exist failed with the following output:
+Change Dir: /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_8f3a2/fast && make  -f CMakeFiles/cmTC_8f3a2.dir/build.make CMakeFiles/cmTC_8f3a2.dir/build
+make[1]: Entering directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8f3a2.dir/CheckSymbolExists.c.o
+/usr/bin/gcc   -w  -std=gnu99 -o CMakeFiles/cmTC_8f3a2.dir/CheckSymbolExists.c.o -c /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:7:19: error: ‘RAND_egd’ undeclared (first use in this function)
+   return ((int*)(&RAND_egd))[argc];
+                   ^
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:7:19: note: each undeclared identifier is reported only once for each function it appears in
+make[1]: *** [CMakeFiles/cmTC_8f3a2.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+make: *** [cmTC_8f3a2/fast] Error 2
+
+
+File /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef RAND_egd
+  return ((int*)(&RAND_egd))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the function dlopen exists in the dl;/usr/lib/i386-linux-gnu/libssl.so;/usr/lib/i386-linux-gnu/libcrypto.so;cmnghttp2 failed with the following output:
+Change Dir: /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_dd7dd/fast && make  -f CMakeFiles/cmTC_dd7dd.dir/build.make CMakeFiles/cmTC_dd7dd.dir/build
+make[1]: Entering directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_dd7dd.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -w -DCHECK_FUNCTION_EXISTS=dlopen -std=gnu99 -o CMakeFiles/cmTC_dd7dd.dir/CheckFunctionExists.c.o -c /home/haihem/Bureau/books/vscode/cmake-3.20.2/Modules/CheckFunctionExists.c
+Linking C executable cmTC_dd7dd
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/Bootstrap.cmk/cmake -E cmake_link_script CMakeFiles/cmTC_dd7dd.dir/link.txt --verbose=1
+/usr/bin/gcc  -w -DCHECK_FUNCTION_EXISTS=dlopen CMakeFiles/cmTC_dd7dd.dir/CheckFunctionExists.c.o -o cmTC_dd7dd  -ldl -lssl -lcrypto -lcmnghttp2 
+/usr/bin/ld: cannot find -lcmnghttp2
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTC_dd7dd] Error 1
+make[1]: Leaving directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+make: *** [cmTC_dd7dd/fast] Error 2
+
+
+
+Determining if files stdio.h;inttypes.h;sys/filio.h exist failed with the following output:
+Change Dir: /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_cab7d/fast && make  -f CMakeFiles/cmTC_cab7d.dir/build.make CMakeFiles/cmTC_cab7d.dir/build
+make[1]: Entering directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_cab7d.dir/HAVE_SYS_FILIO_H.c.o
+/usr/bin/gcc   -w  -std=gnu99 -o CMakeFiles/cmTC_cab7d.dir/HAVE_SYS_FILIO_H.c.o -c /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CheckIncludeFiles/HAVE_SYS_FILIO_H.c
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CheckIncludeFiles/HAVE_SYS_FILIO_H.c:4:23: fatal error: sys/filio.h: No such file or directory
+ #include <sys/filio.h>
+                       ^
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_cab7d.dir/HAVE_SYS_FILIO_H.c.o] Error 1
+make[1]: Leaving directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+make: *** [cmTC_cab7d/fast] Error 2
+
+
+Source:
+/* */
+#include <stdio.h>
+#include <inttypes.h>
+#include <sys/filio.h>
+
+
+int main(void){return 0;}
+
+Determining if files stdio.h;inttypes.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/sockio.h exist failed with the following output:
+Change Dir: /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_07123/fast && make  -f CMakeFiles/cmTC_07123.dir/build.make CMakeFiles/cmTC_07123.dir/build
+make[1]: Entering directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_07123.dir/HAVE_SYS_SOCKIO_H.c.o
+/usr/bin/gcc   -w  -std=gnu99 -o CMakeFiles/cmTC_07123.dir/HAVE_SYS_SOCKIO_H.c.o -c /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CheckIncludeFiles/HAVE_SYS_SOCKIO_H.c
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CheckIncludeFiles/HAVE_SYS_SOCKIO_H.c:10:24: fatal error: sys/sockio.h: No such file or directory
+ #include <sys/sockio.h>
+                        ^
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_07123.dir/HAVE_SYS_SOCKIO_H.c.o] Error 1
+make[1]: Leaving directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+make: *** [cmTC_07123/fast] Error 2
+
+
+Source:
+/* */
+#include <stdio.h>
+#include <inttypes.h>
+#include <sys/ioctl.h>
+#include <sys/param.h>
+#include <sys/poll.h>
+#include <sys/resource.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/sockio.h>
+
+
+int main(void){return 0;}
+
+Determining if files stdio.h;inttypes.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/stat.h;sys/time.h;sys/types.h;sys/uio.h;sys/un.h;sys/utime.h exist failed with the following output:
+Change Dir: /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_f49b3/fast && make  -f CMakeFiles/cmTC_f49b3.dir/build.make CMakeFiles/cmTC_f49b3.dir/build
+make[1]: Entering directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f49b3.dir/HAVE_SYS_UTIME_H.c.o
+/usr/bin/gcc   -w  -std=gnu99 -o CMakeFiles/cmTC_f49b3.dir/HAVE_SYS_UTIME_H.c.o -c /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CheckIncludeFiles/HAVE_SYS_UTIME_H.c
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CheckIncludeFiles/HAVE_SYS_UTIME_H.c:15:23: fatal error: sys/utime.h: No such file or directory
+ #include <sys/utime.h>
+                       ^
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_f49b3.dir/HAVE_SYS_UTIME_H.c.o] Error 1
+make[1]: Leaving directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+make: *** [cmTC_f49b3/fast] Error 2
+
+
+Source:
+/* */
+#include <stdio.h>
+#include <inttypes.h>
+#include <sys/ioctl.h>
+#include <sys/param.h>
+#include <sys/poll.h>
+#include <sys/resource.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/types.h>
+#include <sys/uio.h>
+#include <sys/un.h>
+#include <sys/utime.h>
+
+
+int main(void){return 0;}
+
+Determining if files stdio.h;inttypes.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/stat.h;sys/time.h;sys/types.h;sys/uio.h;sys/un.h;sys/xattr.h;alloca.h;arpa/inet.h;arpa/tftp.h;assert.h;crypto.h exist failed with the following output:
+Change Dir: /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_dc53f/fast && make  -f CMakeFiles/cmTC_dc53f.dir/build.make CMakeFiles/cmTC_dc53f.dir/build
+make[1]: Entering directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_dc53f.dir/HAVE_CRYPTO_H.c.o
+/usr/bin/gcc   -w  -std=gnu99 -o CMakeFiles/cmTC_dc53f.dir/HAVE_CRYPTO_H.c.o -c /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CheckIncludeFiles/HAVE_CRYPTO_H.c
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CheckIncludeFiles/HAVE_CRYPTO_H.c:20:20: fatal error: crypto.h: No such file or directory
+ #include <crypto.h>
+                    ^
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_dc53f.dir/HAVE_CRYPTO_H.c.o] Error 1
+make[1]: Leaving directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+make: *** [cmTC_dc53f/fast] Error 2
+
+
+Source:
+/* */
+#include <stdio.h>
+#include <inttypes.h>
+#include <sys/ioctl.h>
+#include <sys/param.h>
+#include <sys/poll.h>
+#include <sys/resource.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/types.h>
+#include <sys/uio.h>
+#include <sys/un.h>
+#include <sys/xattr.h>
+#include <alloca.h>
+#include <arpa/inet.h>
+#include <arpa/tftp.h>
+#include <assert.h>
+#include <crypto.h>
+
+
+int main(void){return 0;}
+
+Determining if files stdio.h;inttypes.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/stat.h;sys/time.h;sys/types.h;sys/uio.h;sys/un.h;sys/xattr.h;alloca.h;arpa/inet.h;arpa/tftp.h;assert.h;err.h;errno.h;fcntl.h;idn2.h exist failed with the following output:
+Change Dir: /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_46faf/fast && make  -f CMakeFiles/cmTC_46faf.dir/build.make CMakeFiles/cmTC_46faf.dir/build
+make[1]: Entering directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_46faf.dir/HAVE_IDN2_H.c.o
+/usr/bin/gcc   -w  -std=gnu99 -o CMakeFiles/cmTC_46faf.dir/HAVE_IDN2_H.c.o -c /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CheckIncludeFiles/HAVE_IDN2_H.c
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CheckIncludeFiles/HAVE_IDN2_H.c:23:18: fatal error: idn2.h: No such file or directory
+ #include <idn2.h>
+                  ^
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_46faf.dir/HAVE_IDN2_H.c.o] Error 1
+make[1]: Leaving directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+make: *** [cmTC_46faf/fast] Error 2
+
+
+Source:
+/* */
+#include <stdio.h>
+#include <inttypes.h>
+#include <sys/ioctl.h>
+#include <sys/param.h>
+#include <sys/poll.h>
+#include <sys/resource.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/types.h>
+#include <sys/uio.h>
+#include <sys/un.h>
+#include <sys/xattr.h>
+#include <alloca.h>
+#include <arpa/inet.h>
+#include <arpa/tftp.h>
+#include <assert.h>
+#include <err.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <idn2.h>
+
+
+int main(void){return 0;}
+
+Determining if files stdio.h;inttypes.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/stat.h;sys/time.h;sys/types.h;sys/uio.h;sys/un.h;sys/xattr.h;alloca.h;arpa/inet.h;arpa/tftp.h;assert.h;err.h;errno.h;fcntl.h;ifaddrs.h;io.h exist failed with the following output:
+Change Dir: /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_f5e27/fast && make  -f CMakeFiles/cmTC_f5e27.dir/build.make CMakeFiles/cmTC_f5e27.dir/build
+make[1]: Entering directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f5e27.dir/HAVE_IO_H.c.o
+/usr/bin/gcc   -w  -std=gnu99 -o CMakeFiles/cmTC_f5e27.dir/HAVE_IO_H.c.o -c /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CheckIncludeFiles/HAVE_IO_H.c
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CheckIncludeFiles/HAVE_IO_H.c:24:16: fatal error: io.h: No such file or directory
+ #include <io.h>
+                ^
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_f5e27.dir/HAVE_IO_H.c.o] Error 1
+make[1]: Leaving directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+make: *** [cmTC_f5e27/fast] Error 2
+
+
+Source:
+/* */
+#include <stdio.h>
+#include <inttypes.h>
+#include <sys/ioctl.h>
+#include <sys/param.h>
+#include <sys/poll.h>
+#include <sys/resource.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/types.h>
+#include <sys/uio.h>
+#include <sys/un.h>
+#include <sys/xattr.h>
+#include <alloca.h>
+#include <arpa/inet.h>
+#include <arpa/tftp.h>
+#include <assert.h>
+#include <err.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <ifaddrs.h>
+#include <io.h>
+
+
+int main(void){return 0;}
+
+Determining if files stdio.h;inttypes.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/stat.h;sys/time.h;sys/types.h;sys/uio.h;sys/un.h;sys/xattr.h;alloca.h;arpa/inet.h;arpa/tftp.h;assert.h;err.h;errno.h;fcntl.h;ifaddrs.h;krb.h exist failed with the following output:
+Change Dir: /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_4952d/fast && make  -f CMakeFiles/cmTC_4952d.dir/build.make CMakeFiles/cmTC_4952d.dir/build
+make[1]: Entering directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4952d.dir/HAVE_KRB_H.c.o
+/usr/bin/gcc   -w  -std=gnu99 -o CMakeFiles/cmTC_4952d.dir/HAVE_KRB_H.c.o -c /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CheckIncludeFiles/HAVE_KRB_H.c
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CheckIncludeFiles/HAVE_KRB_H.c:24:17: fatal error: krb.h: No such file or directory
+ #include <krb.h>
+                 ^
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_4952d.dir/HAVE_KRB_H.c.o] Error 1
+make[1]: Leaving directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+make: *** [cmTC_4952d/fast] Error 2
+
+
+Source:
+/* */
+#include <stdio.h>
+#include <inttypes.h>
+#include <sys/ioctl.h>
+#include <sys/param.h>
+#include <sys/poll.h>
+#include <sys/resource.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/types.h>
+#include <sys/uio.h>
+#include <sys/un.h>
+#include <sys/xattr.h>
+#include <alloca.h>
+#include <arpa/inet.h>
+#include <arpa/tftp.h>
+#include <assert.h>
+#include <err.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <ifaddrs.h>
+#include <krb.h>
+
+
+int main(void){return 0;}
+
+Determining if files stdio.h;inttypes.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/stat.h;sys/time.h;sys/types.h;sys/uio.h;sys/un.h;sys/xattr.h;alloca.h;arpa/inet.h;arpa/tftp.h;assert.h;err.h;errno.h;fcntl.h;ifaddrs.h;libgen.h;locale.h;net/if.h;netdb.h;netinet/in.h;netinet/tcp.h;pem.h exist failed with the following output:
+Change Dir: /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_3a39b/fast && make  -f CMakeFiles/cmTC_3a39b.dir/build.make CMakeFiles/cmTC_3a39b.dir/build
+make[1]: Entering directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3a39b.dir/HAVE_PEM_H.c.o
+/usr/bin/gcc   -w  -std=gnu99 -o CMakeFiles/cmTC_3a39b.dir/HAVE_PEM_H.c.o -c /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CheckIncludeFiles/HAVE_PEM_H.c
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CheckIncludeFiles/HAVE_PEM_H.c:30:17: fatal error: pem.h: No such file or directory
+ #include <pem.h>
+                 ^
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_3a39b.dir/HAVE_PEM_H.c.o] Error 1
+make[1]: Leaving directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+make: *** [cmTC_3a39b/fast] Error 2
+
+
+Source:
+/* */
+#include <stdio.h>
+#include <inttypes.h>
+#include <sys/ioctl.h>
+#include <sys/param.h>
+#include <sys/poll.h>
+#include <sys/resource.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/types.h>
+#include <sys/uio.h>
+#include <sys/un.h>
+#include <sys/xattr.h>
+#include <alloca.h>
+#include <arpa/inet.h>
+#include <arpa/tftp.h>
+#include <assert.h>
+#include <err.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <ifaddrs.h>
+#include <libgen.h>
+#include <locale.h>
+#include <net/if.h>
+#include <netdb.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <pem.h>
+
+
+int main(void){return 0;}
+
+Determining if files stdio.h;inttypes.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/stat.h;sys/time.h;sys/types.h;sys/uio.h;sys/un.h;sys/xattr.h;alloca.h;arpa/inet.h;arpa/tftp.h;assert.h;err.h;errno.h;fcntl.h;ifaddrs.h;libgen.h;locale.h;net/if.h;netdb.h;netinet/in.h;netinet/tcp.h;poll.h;pwd.h;rsa.h exist failed with the following output:
+Change Dir: /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_d768a/fast && make  -f CMakeFiles/cmTC_d768a.dir/build.make CMakeFiles/cmTC_d768a.dir/build
+make[1]: Entering directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d768a.dir/HAVE_RSA_H.c.o
+/usr/bin/gcc   -w  -std=gnu99 -o CMakeFiles/cmTC_d768a.dir/HAVE_RSA_H.c.o -c /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CheckIncludeFiles/HAVE_RSA_H.c
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CheckIncludeFiles/HAVE_RSA_H.c:32:17: fatal error: rsa.h: No such file or directory
+ #include <rsa.h>
+                 ^
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_d768a.dir/HAVE_RSA_H.c.o] Error 1
+make[1]: Leaving directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+make: *** [cmTC_d768a/fast] Error 2
+
+
+Source:
+/* */
+#include <stdio.h>
+#include <inttypes.h>
+#include <sys/ioctl.h>
+#include <sys/param.h>
+#include <sys/poll.h>
+#include <sys/resource.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/types.h>
+#include <sys/uio.h>
+#include <sys/un.h>
+#include <sys/xattr.h>
+#include <alloca.h>
+#include <arpa/inet.h>
+#include <arpa/tftp.h>
+#include <assert.h>
+#include <err.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <ifaddrs.h>
+#include <libgen.h>
+#include <locale.h>
+#include <net/if.h>
+#include <netdb.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <poll.h>
+#include <pwd.h>
+#include <rsa.h>
+
+
+int main(void){return 0;}
+
+Determining if files stdio.h;inttypes.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/stat.h;sys/time.h;sys/types.h;sys/uio.h;sys/un.h;sys/xattr.h;alloca.h;arpa/inet.h;arpa/tftp.h;assert.h;err.h;errno.h;fcntl.h;ifaddrs.h;libgen.h;locale.h;net/if.h;netdb.h;netinet/in.h;netinet/tcp.h;poll.h;pwd.h;setjmp.h;sgtty.h;signal.h;ssl.h exist failed with the following output:
+Change Dir: /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_47806/fast && make  -f CMakeFiles/cmTC_47806.dir/build.make CMakeFiles/cmTC_47806.dir/build
+make[1]: Entering directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_47806.dir/HAVE_SSL_H.c.o
+/usr/bin/gcc   -w  -std=gnu99 -o CMakeFiles/cmTC_47806.dir/HAVE_SSL_H.c.o -c /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CheckIncludeFiles/HAVE_SSL_H.c
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CheckIncludeFiles/HAVE_SSL_H.c:35:17: fatal error: ssl.h: No such file or directory
+ #include <ssl.h>
+                 ^
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_47806.dir/HAVE_SSL_H.c.o] Error 1
+make[1]: Leaving directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+make: *** [cmTC_47806/fast] Error 2
+
+
+Source:
+/* */
+#include <stdio.h>
+#include <inttypes.h>
+#include <sys/ioctl.h>
+#include <sys/param.h>
+#include <sys/poll.h>
+#include <sys/resource.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/types.h>
+#include <sys/uio.h>
+#include <sys/un.h>
+#include <sys/xattr.h>
+#include <alloca.h>
+#include <arpa/inet.h>
+#include <arpa/tftp.h>
+#include <assert.h>
+#include <err.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <ifaddrs.h>
+#include <libgen.h>
+#include <locale.h>
+#include <net/if.h>
+#include <netdb.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <poll.h>
+#include <pwd.h>
+#include <setjmp.h>
+#include <sgtty.h>
+#include <signal.h>
+#include <ssl.h>
+
+
+int main(void){return 0;}
+
+Determining if files stdio.h;inttypes.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/stat.h;sys/time.h;sys/types.h;sys/uio.h;sys/un.h;sys/xattr.h;alloca.h;arpa/inet.h;arpa/tftp.h;assert.h;err.h;errno.h;fcntl.h;ifaddrs.h;libgen.h;locale.h;net/if.h;netdb.h;netinet/in.h;netinet/tcp.h;poll.h;pwd.h;setjmp.h;sgtty.h;signal.h;stdbool.h;stdint.h;stdio.h;stdlib.h;string.h;strings.h;stropts.h;termio.h;termios.h;time.h;unistd.h;utime.h;x509.h exist failed with the following output:
+Change Dir: /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_e1712/fast && make  -f CMakeFiles/cmTC_e1712.dir/build.make CMakeFiles/cmTC_e1712.dir/build
+make[1]: Entering directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e1712.dir/HAVE_X509_H.c.o
+/usr/bin/gcc   -w  -std=gnu99 -o CMakeFiles/cmTC_e1712.dir/HAVE_X509_H.c.o -c /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CheckIncludeFiles/HAVE_X509_H.c
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CheckIncludeFiles/HAVE_X509_H.c:47:18: fatal error: x509.h: No such file or directory
+ #include <x509.h>
+                  ^
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_e1712.dir/HAVE_X509_H.c.o] Error 1
+make[1]: Leaving directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+make: *** [cmTC_e1712/fast] Error 2
+
+
+Source:
+/* */
+#include <stdio.h>
+#include <inttypes.h>
+#include <sys/ioctl.h>
+#include <sys/param.h>
+#include <sys/poll.h>
+#include <sys/resource.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/types.h>
+#include <sys/uio.h>
+#include <sys/un.h>
+#include <sys/xattr.h>
+#include <alloca.h>
+#include <arpa/inet.h>
+#include <arpa/tftp.h>
+#include <assert.h>
+#include <err.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <ifaddrs.h>
+#include <libgen.h>
+#include <locale.h>
+#include <net/if.h>
+#include <netdb.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <poll.h>
+#include <pwd.h>
+#include <setjmp.h>
+#include <sgtty.h>
+#include <signal.h>
+#include <stdbool.h>
+#include <stdint.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <stropts.h>
+#include <termio.h>
+#include <termios.h>
+#include <time.h>
+#include <unistd.h>
+#include <utime.h>
+#include <x509.h>
+
+
+int main(void){return 0;}
+
+Determining if files stdio.h;inttypes.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/stat.h;sys/time.h;sys/types.h;sys/uio.h;sys/un.h;sys/xattr.h;alloca.h;arpa/inet.h;arpa/tftp.h;assert.h;err.h;errno.h;fcntl.h;ifaddrs.h;libgen.h;locale.h;net/if.h;netdb.h;netinet/in.h;netinet/tcp.h;poll.h;pwd.h;setjmp.h;sgtty.h;signal.h;stdbool.h;stdint.h;stdio.h;stdlib.h;string.h;strings.h;stropts.h;termio.h;termios.h;time.h;unistd.h;utime.h;process.h exist failed with the following output:
+Change Dir: /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_63b86/fast && make  -f CMakeFiles/cmTC_63b86.dir/build.make CMakeFiles/cmTC_63b86.dir/build
+make[1]: Entering directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_63b86.dir/HAVE_PROCESS_H.c.o
+/usr/bin/gcc   -w  -std=gnu99 -o CMakeFiles/cmTC_63b86.dir/HAVE_PROCESS_H.c.o -c /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CheckIncludeFiles/HAVE_PROCESS_H.c
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CheckIncludeFiles/HAVE_PROCESS_H.c:47:21: fatal error: process.h: No such file or directory
+ #include <process.h>
+                     ^
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_63b86.dir/HAVE_PROCESS_H.c.o] Error 1
+make[1]: Leaving directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+make: *** [cmTC_63b86/fast] Error 2
+
+
+Source:
+/* */
+#include <stdio.h>
+#include <inttypes.h>
+#include <sys/ioctl.h>
+#include <sys/param.h>
+#include <sys/poll.h>
+#include <sys/resource.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/types.h>
+#include <sys/uio.h>
+#include <sys/un.h>
+#include <sys/xattr.h>
+#include <alloca.h>
+#include <arpa/inet.h>
+#include <arpa/tftp.h>
+#include <assert.h>
+#include <err.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <ifaddrs.h>
+#include <libgen.h>
+#include <locale.h>
+#include <net/if.h>
+#include <netdb.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <poll.h>
+#include <pwd.h>
+#include <setjmp.h>
+#include <sgtty.h>
+#include <signal.h>
+#include <stdbool.h>
+#include <stdint.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <stropts.h>
+#include <termio.h>
+#include <termios.h>
+#include <time.h>
+#include <unistd.h>
+#include <utime.h>
+#include <process.h>
+
+
+int main(void){return 0;}
+
+Determining if files stdio.h;inttypes.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/stat.h;sys/time.h;sys/types.h;sys/uio.h;sys/un.h;sys/xattr.h;alloca.h;arpa/inet.h;arpa/tftp.h;assert.h;err.h;errno.h;fcntl.h;ifaddrs.h;libgen.h;locale.h;net/if.h;netdb.h;netinet/in.h;netinet/tcp.h;poll.h;pwd.h;setjmp.h;sgtty.h;signal.h;stdbool.h;stdint.h;stdio.h;stdlib.h;string.h;strings.h;stropts.h;termio.h;termios.h;time.h;unistd.h;utime.h;stddef.h;dlfcn.h;malloc.h;memory.h;netinet/if_ether.h;stdint.h;sockio.h exist failed with the following output:
+Change Dir: /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_90b0c/fast && make  -f CMakeFiles/cmTC_90b0c.dir/build.make CMakeFiles/cmTC_90b0c.dir/build
+make[1]: Entering directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_90b0c.dir/HAVE_SOCKIO_H.c.o
+/usr/bin/gcc   -w  -std=gnu99 -o CMakeFiles/cmTC_90b0c.dir/HAVE_SOCKIO_H.c.o -c /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CheckIncludeFiles/HAVE_SOCKIO_H.c
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CheckIncludeFiles/HAVE_SOCKIO_H.c:53:20: fatal error: sockio.h: No such file or directory
+ #include <sockio.h>
+                    ^
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_90b0c.dir/HAVE_SOCKIO_H.c.o] Error 1
+make[1]: Leaving directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+make: *** [cmTC_90b0c/fast] Error 2
+
+
+Source:
+/* */
+#include <stdio.h>
+#include <inttypes.h>
+#include <sys/ioctl.h>
+#include <sys/param.h>
+#include <sys/poll.h>
+#include <sys/resource.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/types.h>
+#include <sys/uio.h>
+#include <sys/un.h>
+#include <sys/xattr.h>
+#include <alloca.h>
+#include <arpa/inet.h>
+#include <arpa/tftp.h>
+#include <assert.h>
+#include <err.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <ifaddrs.h>
+#include <libgen.h>
+#include <locale.h>
+#include <net/if.h>
+#include <netdb.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <poll.h>
+#include <pwd.h>
+#include <setjmp.h>
+#include <sgtty.h>
+#include <signal.h>
+#include <stdbool.h>
+#include <stdint.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <stropts.h>
+#include <termio.h>
+#include <termios.h>
+#include <time.h>
+#include <unistd.h>
+#include <utime.h>
+#include <stddef.h>
+#include <dlfcn.h>
+#include <malloc.h>
+#include <memory.h>
+#include <netinet/if_ether.h>
+#include <stdint.h>
+#include <sockio.h>
+
+
+int main(void){return 0;}
+
+Determining if the stricmp exist failed with the following output:
+Change Dir: /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_31d47/fast && make  -f CMakeFiles/cmTC_31d47.dir/build.make CMakeFiles/cmTC_31d47.dir/build
+make[1]: Entering directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_31d47.dir/CheckSymbolExists.c.o
+/usr/bin/gcc   -w  -std=gnu99 -o CMakeFiles/cmTC_31d47.dir/CheckSymbolExists.c.o -c /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:59:19: error: ‘stricmp’ undeclared (first use in this function)
+   return ((int*)(&stricmp))[argc];
+                   ^
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:59:19: note: each undeclared identifier is reported only once for each function it appears in
+make[1]: *** [CMakeFiles/cmTC_31d47.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+make: *** [cmTC_31d47/fast] Error 2
+
+
+File /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdio.h>
+#include <inttypes.h>
+#include <sys/ioctl.h>
+#include <sys/param.h>
+#include <sys/poll.h>
+#include <sys/resource.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/types.h>
+#include <sys/uio.h>
+#include <sys/un.h>
+#include <sys/xattr.h>
+#include <alloca.h>
+#include <arpa/inet.h>
+#include <arpa/tftp.h>
+#include <assert.h>
+#include <err.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <ifaddrs.h>
+#include <libgen.h>
+#include <locale.h>
+#include <net/if.h>
+#include <netdb.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <poll.h>
+#include <pwd.h>
+#include <setjmp.h>
+#include <sgtty.h>
+#include <signal.h>
+#include <stdbool.h>
+#include <stdint.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <stropts.h>
+#include <termio.h>
+#include <termios.h>
+#include <time.h>
+#include <unistd.h>
+#include <utime.h>
+#include <stddef.h>
+#include <dlfcn.h>
+#include <malloc.h>
+#include <memory.h>
+#include <netinet/if_ether.h>
+#include <stdint.h>
+#include <sys/utsname.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef stricmp
+  return ((int*)(&stricmp))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the strcmpi exist failed with the following output:
+Change Dir: /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_3e612/fast && make  -f CMakeFiles/cmTC_3e612.dir/build.make CMakeFiles/cmTC_3e612.dir/build
+make[1]: Entering directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3e612.dir/CheckSymbolExists.c.o
+/usr/bin/gcc   -w  -std=gnu99 -o CMakeFiles/cmTC_3e612.dir/CheckSymbolExists.c.o -c /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:59:19: error: ‘strcmpi’ undeclared (first use in this function)
+   return ((int*)(&strcmpi))[argc];
+                   ^
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:59:19: note: each undeclared identifier is reported only once for each function it appears in
+make[1]: *** [CMakeFiles/cmTC_3e612.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+make: *** [cmTC_3e612/fast] Error 2
+
+
+File /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdio.h>
+#include <inttypes.h>
+#include <sys/ioctl.h>
+#include <sys/param.h>
+#include <sys/poll.h>
+#include <sys/resource.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/types.h>
+#include <sys/uio.h>
+#include <sys/un.h>
+#include <sys/xattr.h>
+#include <alloca.h>
+#include <arpa/inet.h>
+#include <arpa/tftp.h>
+#include <assert.h>
+#include <err.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <ifaddrs.h>
+#include <libgen.h>
+#include <locale.h>
+#include <net/if.h>
+#include <netdb.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <poll.h>
+#include <pwd.h>
+#include <setjmp.h>
+#include <sgtty.h>
+#include <signal.h>
+#include <stdbool.h>
+#include <stdint.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <stropts.h>
+#include <termio.h>
+#include <termios.h>
+#include <time.h>
+#include <unistd.h>
+#include <utime.h>
+#include <stddef.h>
+#include <dlfcn.h>
+#include <malloc.h>
+#include <memory.h>
+#include <netinet/if_ether.h>
+#include <stdint.h>
+#include <sys/utsname.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strcmpi
+  return ((int*)(&strcmpi))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the strncmpi exist failed with the following output:
+Change Dir: /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_a9920/fast && make  -f CMakeFiles/cmTC_a9920.dir/build.make CMakeFiles/cmTC_a9920.dir/build
+make[1]: Entering directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a9920.dir/CheckSymbolExists.c.o
+/usr/bin/gcc   -w  -std=gnu99 -o CMakeFiles/cmTC_a9920.dir/CheckSymbolExists.c.o -c /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:59:19: error: ‘strncmpi’ undeclared (first use in this function)
+   return ((int*)(&strncmpi))[argc];
+                   ^
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:59:19: note: each undeclared identifier is reported only once for each function it appears in
+make[1]: *** [CMakeFiles/cmTC_a9920.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+make: *** [cmTC_a9920/fast] Error 2
+
+
+File /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdio.h>
+#include <inttypes.h>
+#include <sys/ioctl.h>
+#include <sys/param.h>
+#include <sys/poll.h>
+#include <sys/resource.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/types.h>
+#include <sys/uio.h>
+#include <sys/un.h>
+#include <sys/xattr.h>
+#include <alloca.h>
+#include <arpa/inet.h>
+#include <arpa/tftp.h>
+#include <assert.h>
+#include <err.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <ifaddrs.h>
+#include <libgen.h>
+#include <locale.h>
+#include <net/if.h>
+#include <netdb.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <poll.h>
+#include <pwd.h>
+#include <setjmp.h>
+#include <sgtty.h>
+#include <signal.h>
+#include <stdbool.h>
+#include <stdint.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <stropts.h>
+#include <termio.h>
+#include <termios.h>
+#include <time.h>
+#include <unistd.h>
+#include <utime.h>
+#include <stddef.h>
+#include <dlfcn.h>
+#include <malloc.h>
+#include <memory.h>
+#include <netinet/if_ether.h>
+#include <stdint.h>
+#include <sys/utsname.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strncmpi
+  return ((int*)(&strncmpi))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the inet_ntoa_r exist failed with the following output:
+Change Dir: /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_4e7e7/fast && make  -f CMakeFiles/cmTC_4e7e7.dir/build.make CMakeFiles/cmTC_4e7e7.dir/build
+make[1]: Entering directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4e7e7.dir/CheckSymbolExists.c.o
+/usr/bin/gcc   -w  -std=gnu99 -o CMakeFiles/cmTC_4e7e7.dir/CheckSymbolExists.c.o -c /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:59:19: error: ‘inet_ntoa_r’ undeclared (first use in this function)
+   return ((int*)(&inet_ntoa_r))[argc];
+                   ^
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:59:19: note: each undeclared identifier is reported only once for each function it appears in
+make[1]: *** [CMakeFiles/cmTC_4e7e7.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+make: *** [cmTC_4e7e7/fast] Error 2
+
+
+File /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdio.h>
+#include <inttypes.h>
+#include <sys/ioctl.h>
+#include <sys/param.h>
+#include <sys/poll.h>
+#include <sys/resource.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/types.h>
+#include <sys/uio.h>
+#include <sys/un.h>
+#include <sys/xattr.h>
+#include <alloca.h>
+#include <arpa/inet.h>
+#include <arpa/tftp.h>
+#include <assert.h>
+#include <err.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <ifaddrs.h>
+#include <libgen.h>
+#include <locale.h>
+#include <net/if.h>
+#include <netdb.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <poll.h>
+#include <pwd.h>
+#include <setjmp.h>
+#include <sgtty.h>
+#include <signal.h>
+#include <stdbool.h>
+#include <stdint.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <stropts.h>
+#include <termio.h>
+#include <termios.h>
+#include <time.h>
+#include <unistd.h>
+#include <utime.h>
+#include <stddef.h>
+#include <dlfcn.h>
+#include <malloc.h>
+#include <memory.h>
+#include <netinet/if_ether.h>
+#include <stdint.h>
+#include <sys/utsname.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef inet_ntoa_r
+  return ((int*)(&inet_ntoa_r))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the closesocket exist failed with the following output:
+Change Dir: /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_d3c86/fast && make  -f CMakeFiles/cmTC_d3c86.dir/build.make CMakeFiles/cmTC_d3c86.dir/build
+make[1]: Entering directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d3c86.dir/CheckSymbolExists.c.o
+/usr/bin/gcc   -w  -std=gnu99 -o CMakeFiles/cmTC_d3c86.dir/CheckSymbolExists.c.o -c /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:59:19: error: ‘closesocket’ undeclared (first use in this function)
+   return ((int*)(&closesocket))[argc];
+                   ^
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:59:19: note: each undeclared identifier is reported only once for each function it appears in
+make[1]: *** [CMakeFiles/cmTC_d3c86.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+make: *** [cmTC_d3c86/fast] Error 2
+
+
+File /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdio.h>
+#include <inttypes.h>
+#include <sys/ioctl.h>
+#include <sys/param.h>
+#include <sys/poll.h>
+#include <sys/resource.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/types.h>
+#include <sys/uio.h>
+#include <sys/un.h>
+#include <sys/xattr.h>
+#include <alloca.h>
+#include <arpa/inet.h>
+#include <arpa/tftp.h>
+#include <assert.h>
+#include <err.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <ifaddrs.h>
+#include <libgen.h>
+#include <locale.h>
+#include <net/if.h>
+#include <netdb.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <poll.h>
+#include <pwd.h>
+#include <setjmp.h>
+#include <sgtty.h>
+#include <signal.h>
+#include <stdbool.h>
+#include <stdint.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <stropts.h>
+#include <termio.h>
+#include <termios.h>
+#include <time.h>
+#include <unistd.h>
+#include <utime.h>
+#include <stddef.h>
+#include <dlfcn.h>
+#include <malloc.h>
+#include <memory.h>
+#include <netinet/if_ether.h>
+#include <stdint.h>
+#include <sys/utsname.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef closesocket
+  return ((int*)(&closesocket))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the getpass_r exist failed with the following output:
+Change Dir: /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_8f062/fast && make  -f CMakeFiles/cmTC_8f062.dir/build.make CMakeFiles/cmTC_8f062.dir/build
+make[1]: Entering directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8f062.dir/CheckSymbolExists.c.o
+/usr/bin/gcc   -w  -std=gnu99 -o CMakeFiles/cmTC_8f062.dir/CheckSymbolExists.c.o -c /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:59:19: error: ‘getpass_r’ undeclared (first use in this function)
+   return ((int*)(&getpass_r))[argc];
+                   ^
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:59:19: note: each undeclared identifier is reported only once for each function it appears in
+make[1]: *** [CMakeFiles/cmTC_8f062.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+make: *** [cmTC_8f062/fast] Error 2
+
+
+File /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdio.h>
+#include <inttypes.h>
+#include <sys/ioctl.h>
+#include <sys/param.h>
+#include <sys/poll.h>
+#include <sys/resource.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/types.h>
+#include <sys/uio.h>
+#include <sys/un.h>
+#include <sys/xattr.h>
+#include <alloca.h>
+#include <arpa/inet.h>
+#include <arpa/tftp.h>
+#include <assert.h>
+#include <err.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <ifaddrs.h>
+#include <libgen.h>
+#include <locale.h>
+#include <net/if.h>
+#include <netdb.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <poll.h>
+#include <pwd.h>
+#include <setjmp.h>
+#include <sgtty.h>
+#include <signal.h>
+#include <stdbool.h>
+#include <stdint.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <stropts.h>
+#include <termio.h>
+#include <termios.h>
+#include <time.h>
+#include <unistd.h>
+#include <utime.h>
+#include <stddef.h>
+#include <dlfcn.h>
+#include <malloc.h>
+#include <memory.h>
+#include <netinet/if_ether.h>
+#include <stdint.h>
+#include <sys/utsname.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef getpass_r
+  return ((int*)(&getpass_r))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the strlcat exist failed with the following output:
+Change Dir: /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_ae42f/fast && make  -f CMakeFiles/cmTC_ae42f.dir/build.make CMakeFiles/cmTC_ae42f.dir/build
+make[1]: Entering directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ae42f.dir/CheckSymbolExists.c.o
+/usr/bin/gcc   -w  -std=gnu99 -o CMakeFiles/cmTC_ae42f.dir/CheckSymbolExists.c.o -c /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:59:19: error: ‘strlcat’ undeclared (first use in this function)
+   return ((int*)(&strlcat))[argc];
+                   ^
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:59:19: note: each undeclared identifier is reported only once for each function it appears in
+make[1]: *** [CMakeFiles/cmTC_ae42f.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+make: *** [cmTC_ae42f/fast] Error 2
+
+
+File /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdio.h>
+#include <inttypes.h>
+#include <sys/ioctl.h>
+#include <sys/param.h>
+#include <sys/poll.h>
+#include <sys/resource.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/types.h>
+#include <sys/uio.h>
+#include <sys/un.h>
+#include <sys/xattr.h>
+#include <alloca.h>
+#include <arpa/inet.h>
+#include <arpa/tftp.h>
+#include <assert.h>
+#include <err.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <ifaddrs.h>
+#include <libgen.h>
+#include <locale.h>
+#include <net/if.h>
+#include <netdb.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <poll.h>
+#include <pwd.h>
+#include <setjmp.h>
+#include <sgtty.h>
+#include <signal.h>
+#include <stdbool.h>
+#include <stdint.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <stropts.h>
+#include <termio.h>
+#include <termios.h>
+#include <time.h>
+#include <unistd.h>
+#include <utime.h>
+#include <stddef.h>
+#include <dlfcn.h>
+#include <malloc.h>
+#include <memory.h>
+#include <netinet/if_ether.h>
+#include <stdint.h>
+#include <sys/utsname.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strlcat
+  return ((int*)(&strlcat))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the _strtoi64 exist failed with the following output:
+Change Dir: /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_6b29f/fast && make  -f CMakeFiles/cmTC_6b29f.dir/build.make CMakeFiles/cmTC_6b29f.dir/build
+make[1]: Entering directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_6b29f.dir/CheckSymbolExists.c.o
+/usr/bin/gcc   -w  -std=gnu99 -o CMakeFiles/cmTC_6b29f.dir/CheckSymbolExists.c.o -c /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:59:19: error: ‘_strtoi64’ undeclared (first use in this function)
+   return ((int*)(&_strtoi64))[argc];
+                   ^
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:59:19: note: each undeclared identifier is reported only once for each function it appears in
+make[1]: *** [CMakeFiles/cmTC_6b29f.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+make: *** [cmTC_6b29f/fast] Error 2
+
+
+File /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdio.h>
+#include <inttypes.h>
+#include <sys/ioctl.h>
+#include <sys/param.h>
+#include <sys/poll.h>
+#include <sys/resource.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/types.h>
+#include <sys/uio.h>
+#include <sys/un.h>
+#include <sys/xattr.h>
+#include <alloca.h>
+#include <arpa/inet.h>
+#include <arpa/tftp.h>
+#include <assert.h>
+#include <err.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <ifaddrs.h>
+#include <libgen.h>
+#include <locale.h>
+#include <net/if.h>
+#include <netdb.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <poll.h>
+#include <pwd.h>
+#include <setjmp.h>
+#include <sgtty.h>
+#include <signal.h>
+#include <stdbool.h>
+#include <stdint.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <stropts.h>
+#include <termio.h>
+#include <termios.h>
+#include <time.h>
+#include <unistd.h>
+#include <utime.h>
+#include <stddef.h>
+#include <dlfcn.h>
+#include <malloc.h>
+#include <memory.h>
+#include <netinet/if_ether.h>
+#include <stdint.h>
+#include <sys/utsname.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _strtoi64
+  return ((int*)(&_strtoi64))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the setmode exist failed with the following output:
+Change Dir: /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_67d8e/fast && make  -f CMakeFiles/cmTC_67d8e.dir/build.make CMakeFiles/cmTC_67d8e.dir/build
+make[1]: Entering directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_67d8e.dir/CheckSymbolExists.c.o
+/usr/bin/gcc   -w  -std=gnu99 -o CMakeFiles/cmTC_67d8e.dir/CheckSymbolExists.c.o -c /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:59:19: error: ‘setmode’ undeclared (first use in this function)
+   return ((int*)(&setmode))[argc];
+                   ^
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:59:19: note: each undeclared identifier is reported only once for each function it appears in
+make[1]: *** [CMakeFiles/cmTC_67d8e.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+make: *** [cmTC_67d8e/fast] Error 2
+
+
+File /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdio.h>
+#include <inttypes.h>
+#include <sys/ioctl.h>
+#include <sys/param.h>
+#include <sys/poll.h>
+#include <sys/resource.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/types.h>
+#include <sys/uio.h>
+#include <sys/un.h>
+#include <sys/xattr.h>
+#include <alloca.h>
+#include <arpa/inet.h>
+#include <arpa/tftp.h>
+#include <assert.h>
+#include <err.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <ifaddrs.h>
+#include <libgen.h>
+#include <locale.h>
+#include <net/if.h>
+#include <netdb.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <poll.h>
+#include <pwd.h>
+#include <setjmp.h>
+#include <sgtty.h>
+#include <signal.h>
+#include <stdbool.h>
+#include <stdint.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <stropts.h>
+#include <termio.h>
+#include <termios.h>
+#include <time.h>
+#include <unistd.h>
+#include <utime.h>
+#include <stddef.h>
+#include <dlfcn.h>
+#include <malloc.h>
+#include <memory.h>
+#include <netinet/if_ether.h>
+#include <stdint.h>
+#include <sys/utsname.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef setmode
+  return ((int*)(&setmode))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the function mach_absolute_time exists failed with the following output:
+Change Dir: /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_1f764/fast && make  -f CMakeFiles/cmTC_1f764.dir/build.make CMakeFiles/cmTC_1f764.dir/build
+make[1]: Entering directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1f764.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -w -DCHECK_FUNCTION_EXISTS=mach_absolute_time -std=gnu99 -o CMakeFiles/cmTC_1f764.dir/CheckFunctionExists.c.o -c /home/haihem/Bureau/books/vscode/cmake-3.20.2/Modules/CheckFunctionExists.c
+Linking C executable cmTC_1f764
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/Bootstrap.cmk/cmake -E cmake_link_script CMakeFiles/cmTC_1f764.dir/link.txt --verbose=1
+/usr/bin/gcc  -w -DCHECK_FUNCTION_EXISTS=mach_absolute_time CMakeFiles/cmTC_1f764.dir/CheckFunctionExists.c.o -o cmTC_1f764 
+CMakeFiles/cmTC_1f764.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x7): undefined reference to `mach_absolute_time'
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTC_1f764] Error 1
+make[1]: Leaving directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+make: *** [cmTC_1f764/fast] Error 2
+
+
+
+Performing Curl Test HAVE_FSETXATTR_6 failed with the following output:
+Change Dir: /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_e4c95/fast && make  -f CMakeFiles/cmTC_e4c95.dir/build.make CMakeFiles/cmTC_e4c95.dir/build
+make[1]: Entering directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e4c95.dir/CurlTests.c.o
+/usr/bin/gcc   -w -DHAVE_FSETXATTR_6  -DHAVE_STDIO_H -DHAVE_INTTYPES_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UIO_H -DHAVE_SYS_UN_H -DHAVE_SYS_XATTR_H -DHAVE_ALLOCA_H -DHAVE_ARPA_INET_H -DHAVE_ARPA_TFTP_H -DHAVE_ASSERT_H -DHAVE_ERR_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_SETJMP_H -DHAVE_SGTTY_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_STRINGS_H -DHAVE_STROPTS_H -DHAVE_TERMIO_H -DHAVE_TERMIOS_H -DHAVE_TIME_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -DHAVE_STDDEF_H -DHAVE_DLFCN_H -DHAVE_MALLOC_H -DHAVE_MEMORY_H -DHAVE_NETINET_IF_ETHER_H -DHAVE_STDINT_H -DHAVE_SYS_UTSNAME_H -std=gnu99 -o CMakeFiles/cmTC_e4c95.dir/CurlTests.c.o -c /home/haihem/Bureau/books/vscode/cmake-3.20.2/Utilities/cmcurl/CMake/CurlTests.c
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/Utilities/cmcurl/CMake/CurlTests.c: In function ‘main’:
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/Utilities/cmcurl/CMake/CurlTests.c:544:3: error: too many arguments to function ‘fsetxattr’
+   fsetxattr(0, 0, 0, 0, 0, 0);
+   ^
+In file included from /home/haihem/Bureau/books/vscode/cmake-3.20.2/Utilities/cmcurl/CMake/CurlTests.c:541:0:
+/usr/include/i386-linux-gnu/sys/xattr.h:52:12: note: declared here
+ extern int fsetxattr (int __fd, const char *__name, const void *__value,
+            ^
+make[1]: *** [CMakeFiles/cmTC_e4c95.dir/CurlTests.c.o] Error 1
+make[1]: Leaving directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+make: *** [cmTC_e4c95/fast] Error 2
+
+
+Performing Curl Test HAVE_IOCTLSOCKET failed with the following output:
+Change Dir: /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_86765/fast && make  -f CMakeFiles/cmTC_86765.dir/build.make CMakeFiles/cmTC_86765.dir/build
+make[1]: Entering directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_86765.dir/CurlTests.c.o
+/usr/bin/gcc   -w -DHAVE_IOCTLSOCKET  -DHAVE_STDIO_H -DHAVE_INTTYPES_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UIO_H -DHAVE_SYS_UN_H -DHAVE_SYS_XATTR_H -DHAVE_ALLOCA_H -DHAVE_ARPA_INET_H -DHAVE_ARPA_TFTP_H -DHAVE_ASSERT_H -DHAVE_ERR_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_SETJMP_H -DHAVE_SGTTY_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_STRINGS_H -DHAVE_STROPTS_H -DHAVE_TERMIO_H -DHAVE_TERMIOS_H -DHAVE_TIME_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -DHAVE_STDDEF_H -DHAVE_DLFCN_H -DHAVE_MALLOC_H -DHAVE_MEMORY_H -DHAVE_NETINET_IF_ETHER_H -DHAVE_STDINT_H -DHAVE_SYS_UTSNAME_H -std=gnu99 -o CMakeFiles/cmTC_86765.dir/CurlTests.c.o -c /home/haihem/Bureau/books/vscode/cmake-3.20.2/Utilities/cmcurl/CMake/CurlTests.c
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/Utilities/cmcurl/CMake/CurlTests.c: In function ‘main’:
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/Utilities/cmcurl/CMake/CurlTests.c:326:44: error: ‘FIONBIO’ undeclared (first use in this function)
+  unsigned long flags = ioctlsocket(socket, FIONBIO, &flags);
+                                            ^
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/Utilities/cmcurl/CMake/CurlTests.c:326:44: note: each undeclared identifier is reported only once for each function it appears in
+make[1]: *** [CMakeFiles/cmTC_86765.dir/CurlTests.c.o] Error 1
+make[1]: Leaving directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+make: *** [cmTC_86765/fast] Error 2
+
+
+Performing Curl Test HAVE_IOCTLSOCKET_CAMEL failed with the following output:
+Change Dir: /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_17fb6/fast && make  -f CMakeFiles/cmTC_17fb6.dir/build.make CMakeFiles/cmTC_17fb6.dir/build
+make[1]: Entering directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_17fb6.dir/CurlTests.c.o
+/usr/bin/gcc   -w -DHAVE_IOCTLSOCKET_CAMEL  -DHAVE_STDIO_H -DHAVE_INTTYPES_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UIO_H -DHAVE_SYS_UN_H -DHAVE_SYS_XATTR_H -DHAVE_ALLOCA_H -DHAVE_ARPA_INET_H -DHAVE_ARPA_TFTP_H -DHAVE_ASSERT_H -DHAVE_ERR_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_SETJMP_H -DHAVE_SGTTY_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_STRINGS_H -DHAVE_STROPTS_H -DHAVE_TERMIO_H -DHAVE_TERMIOS_H -DHAVE_TIME_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -DHAVE_STDDEF_H -DHAVE_DLFCN_H -DHAVE_MALLOC_H -DHAVE_MEMORY_H -DHAVE_NETINET_IF_ETHER_H -DHAVE_STDINT_H -DHAVE_SYS_UTSNAME_H -std=gnu99 -o CMakeFiles/cmTC_17fb6.dir/CurlTests.c.o -c /home/haihem/Bureau/books/vscode/cmake-3.20.2/Utilities/cmcurl/CMake/CurlTests.c
+Linking C executable cmTC_17fb6
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/Bootstrap.cmk/cmake -E cmake_link_script CMakeFiles/cmTC_17fb6.dir/link.txt --verbose=1
+/usr/bin/gcc  -w -DHAVE_IOCTLSOCKET_CAMEL  -DHAVE_STDIO_H -DHAVE_INTTYPES_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UIO_H -DHAVE_SYS_UN_H -DHAVE_SYS_XATTR_H -DHAVE_ALLOCA_H -DHAVE_ARPA_INET_H -DHAVE_ARPA_TFTP_H -DHAVE_ASSERT_H -DHAVE_ERR_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_SETJMP_H -DHAVE_SGTTY_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_STRINGS_H -DHAVE_STROPTS_H -DHAVE_TERMIO_H -DHAVE_TERMIOS_H -DHAVE_TIME_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -DHAVE_STDDEF_H -DHAVE_DLFCN_H -DHAVE_MALLOC_H -DHAVE_MEMORY_H -DHAVE_NETINET_IF_ETHER_H -DHAVE_STDINT_H -DHAVE_SYS_UTSNAME_H CMakeFiles/cmTC_17fb6.dir/CurlTests.c.o -o cmTC_17fb6 
+CMakeFiles/cmTC_17fb6.dir/CurlTests.c.o: In function `main':
+CurlTests.c:(.text+0x21): undefined reference to `IoctlSocket'
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTC_17fb6] Error 1
+make[1]: Leaving directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+make: *** [cmTC_17fb6/fast] Error 2
+
+
+Performing Curl Test HAVE_IOCTLSOCKET_CAMEL_FIONBIO failed with the following output:
+Change Dir: /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_4c225/fast && make  -f CMakeFiles/cmTC_4c225.dir/build.make CMakeFiles/cmTC_4c225.dir/build
+make[1]: Entering directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4c225.dir/CurlTests.c.o
+/usr/bin/gcc   -w -DHAVE_IOCTLSOCKET_CAMEL_FIONBIO  -DHAVE_STDIO_H -DHAVE_INTTYPES_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UIO_H -DHAVE_SYS_UN_H -DHAVE_SYS_XATTR_H -DHAVE_ALLOCA_H -DHAVE_ARPA_INET_H -DHAVE_ARPA_TFTP_H -DHAVE_ASSERT_H -DHAVE_ERR_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_SETJMP_H -DHAVE_SGTTY_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_STRINGS_H -DHAVE_STROPTS_H -DHAVE_TERMIO_H -DHAVE_TERMIOS_H -DHAVE_TIME_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -DHAVE_STDDEF_H -DHAVE_DLFCN_H -DHAVE_MALLOC_H -DHAVE_MEMORY_H -DHAVE_NETINET_IF_ETHER_H -DHAVE_STDINT_H -DHAVE_SYS_UTSNAME_H -std=gnu99 -o CMakeFiles/cmTC_4c225.dir/CurlTests.c.o -c /home/haihem/Bureau/books/vscode/cmake-3.20.2/Utilities/cmcurl/CMake/CurlTests.c
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/Utilities/cmcurl/CMake/CurlTests.c: In function ‘main’:
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/Utilities/cmcurl/CMake/CurlTests.c:382:32: error: ‘FIONBIO’ undeclared (first use in this function)
+         if(0 != ioctlsocket(0, FIONBIO, &flags))
+                                ^
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/Utilities/cmcurl/CMake/CurlTests.c:382:32: note: each undeclared identifier is reported only once for each function it appears in
+make[1]: *** [CMakeFiles/cmTC_4c225.dir/CurlTests.c.o] Error 1
+make[1]: Leaving directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+make: *** [cmTC_4c225/fast] Error 2
+
+
+Performing Curl Test HAVE_IOCTLSOCKET_FIONBIO failed with the following output:
+Change Dir: /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_0d639/fast && make  -f CMakeFiles/cmTC_0d639.dir/build.make CMakeFiles/cmTC_0d639.dir/build
+make[1]: Entering directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0d639.dir/CurlTests.c.o
+/usr/bin/gcc   -w -DHAVE_IOCTLSOCKET_FIONBIO  -DHAVE_STDIO_H -DHAVE_INTTYPES_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UIO_H -DHAVE_SYS_UN_H -DHAVE_SYS_XATTR_H -DHAVE_ALLOCA_H -DHAVE_ARPA_INET_H -DHAVE_ARPA_TFTP_H -DHAVE_ASSERT_H -DHAVE_ERR_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_SETJMP_H -DHAVE_SGTTY_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_STRINGS_H -DHAVE_STROPTS_H -DHAVE_TERMIO_H -DHAVE_TERMIOS_H -DHAVE_TIME_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -DHAVE_STDDEF_H -DHAVE_DLFCN_H -DHAVE_MALLOC_H -DHAVE_MEMORY_H -DHAVE_NETINET_IF_ETHER_H -DHAVE_STDINT_H -DHAVE_SYS_UTSNAME_H -std=gnu99 -o CMakeFiles/cmTC_0d639.dir/CurlTests.c.o -c /home/haihem/Bureau/books/vscode/cmake-3.20.2/Utilities/cmcurl/CMake/CurlTests.c
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/Utilities/cmcurl/CMake/CurlTests.c: In function ‘main’:
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/Utilities/cmcurl/CMake/CurlTests.c:409:32: error: ‘FIONBIO’ undeclared (first use in this function)
+         if(0 != ioctlsocket(0, FIONBIO, &flags))
+                                ^
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/Utilities/cmcurl/CMake/CurlTests.c:409:32: note: each undeclared identifier is reported only once for each function it appears in
+make[1]: *** [CMakeFiles/cmTC_0d639.dir/CurlTests.c.o] Error 1
+make[1]: Leaving directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+make: *** [cmTC_0d639/fast] Error 2
+
+
+Performing Curl Test HAVE_SETSOCKOPT_SO_NONBLOCK failed with the following output:
+Change Dir: /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_12565/fast && make  -f CMakeFiles/cmTC_12565.dir/build.make CMakeFiles/cmTC_12565.dir/build
+make[1]: Entering directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_12565.dir/CurlTests.c.o
+/usr/bin/gcc   -w -DHAVE_SETSOCKOPT_SO_NONBLOCK  -DHAVE_STDIO_H -DHAVE_INTTYPES_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UIO_H -DHAVE_SYS_UN_H -DHAVE_SYS_XATTR_H -DHAVE_ALLOCA_H -DHAVE_ARPA_INET_H -DHAVE_ARPA_TFTP_H -DHAVE_ASSERT_H -DHAVE_ERR_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_SETJMP_H -DHAVE_SGTTY_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_STRINGS_H -DHAVE_STROPTS_H -DHAVE_TERMIO_H -DHAVE_TERMIOS_H -DHAVE_TIME_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -DHAVE_STDDEF_H -DHAVE_DLFCN_H -DHAVE_MALLOC_H -DHAVE_MEMORY_H -DHAVE_NETINET_IF_ETHER_H -DHAVE_STDINT_H -DHAVE_SYS_UTSNAME_H -std=gnu99 -o CMakeFiles/cmTC_12565.dir/CurlTests.c.o -c /home/haihem/Bureau/books/vscode/cmake-3.20.2/Utilities/cmcurl/CMake/CurlTests.c
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/Utilities/cmcurl/CMake/CurlTests.c: In function ‘main’:
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/Utilities/cmcurl/CMake/CurlTests.c:505:43: error: ‘SO_NONBLOCK’ undeclared (first use in this function)
+         if(0 != setsockopt(0, SOL_SOCKET, SO_NONBLOCK, 0, 0))
+                                           ^
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/Utilities/cmcurl/CMake/CurlTests.c:505:43: note: each undeclared identifier is reported only once for each function it appears in
+make[1]: *** [CMakeFiles/cmTC_12565.dir/CurlTests.c.o] Error 1
+make[1]: Leaving directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+make: *** [cmTC_12565/fast] Error 2
+
+
+Performing Curl Test HAVE_O_NONBLOCK failed with the following output:
+Change Dir: /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_102d2/fast && make  -f CMakeFiles/cmTC_102d2.dir/build.make CMakeFiles/cmTC_102d2.dir/build
+make[1]: Entering directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_102d2.dir/CurlTests.c.o
+/usr/bin/gcc   -w -DHAVE_O_NONBLOCK  -DHAVE_STDIO_H -DHAVE_INTTYPES_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UIO_H -DHAVE_SYS_UN_H -DHAVE_SYS_XATTR_H -DHAVE_ALLOCA_H -DHAVE_ARPA_INET_H -DHAVE_ARPA_TFTP_H -DHAVE_ASSERT_H -DHAVE_ERR_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_SETJMP_H -DHAVE_SGTTY_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_STRINGS_H -DHAVE_STROPTS_H -DHAVE_TERMIO_H -DHAVE_TERMIOS_H -DHAVE_TIME_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -DHAVE_STDDEF_H -DHAVE_DLFCN_H -DHAVE_MALLOC_H -DHAVE_MEMORY_H -DHAVE_NETINET_IF_ETHER_H -DHAVE_STDINT_H -DHAVE_SYS_UTSNAME_H -std=gnu99 -o CMakeFiles/cmTC_102d2.dir/CurlTests.c.o -c /home/haihem/Bureau/books/vscode/cmake-3.20.2/Utilities/cmcurl/CMake/CurlTests.c
+Linking C executable cmTC_102d2
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/Bootstrap.cmk/cmake -E cmake_link_script CMakeFiles/cmTC_102d2.dir/link.txt --verbose=1
+/usr/bin/gcc  -w -DHAVE_O_NONBLOCK  -DHAVE_STDIO_H -DHAVE_INTTYPES_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UIO_H -DHAVE_SYS_UN_H -DHAVE_SYS_XATTR_H -DHAVE_ALLOCA_H -DHAVE_ARPA_INET_H -DHAVE_ARPA_TFTP_H -DHAVE_ASSERT_H -DHAVE_ERR_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_SETJMP_H -DHAVE_SGTTY_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_STRINGS_H -DHAVE_STROPTS_H -DHAVE_TERMIO_H -DHAVE_TERMIOS_H -DHAVE_TIME_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -DHAVE_STDDEF_H -DHAVE_DLFCN_H -DHAVE_MALLOC_H -DHAVE_MEMORY_H -DHAVE_NETINET_IF_ETHER_H -DHAVE_STDINT_H -DHAVE_SYS_UTSNAME_H CMakeFiles/cmTC_102d2.dir/CurlTests.c.o -o cmTC_102d2 
+/usr/bin/ld: /usr/lib/debug/usr/lib/i386-linux-gnu/crt1.o(.debug_info): relocation 0 has invalid symbol index 11
+/usr/bin/ld: /usr/lib/debug/usr/lib/i386-linux-gnu/crt1.o(.debug_info): relocation 1 has invalid symbol index 12
+/usr/bin/ld: /usr/lib/debug/usr/lib/i386-linux-gnu/crt1.o(.debug_info): relocation 2 has invalid symbol index 2
+/usr/bin/ld: /usr/lib/debug/usr/lib/i386-linux-gnu/crt1.o(.debug_info): relocation 3 has invalid symbol index 2
+/usr/bin/ld: /usr/lib/debug/usr/lib/i386-linux-gnu/crt1.o(.debug_info): relocation 4 has invalid symbol index 11
+/usr/bin/ld: /usr/lib/debug/usr/lib/i386-linux-gnu/crt1.o(.debug_info): relocation 5 has invalid symbol index 13
+/usr/bin/ld: /usr/lib/debug/usr/lib/i386-linux-gnu/crt1.o(.debug_info): relocation 6 has invalid symbol index 13
+/usr/bin/ld: /usr/lib/debug/usr/lib/i386-linux-gnu/crt1.o(.debug_info): relocation 7 has invalid symbol index 13
+/usr/bin/ld: /usr/lib/debug/usr/lib/i386-linux-gnu/crt1.o(.debug_info): relocation 8 has invalid symbol index 12
+/usr/bin/ld: /usr/lib/debug/usr/lib/i386-linux-gnu/crt1.o(.debug_info): relocation 9 has invalid symbol index 13
+/usr/bin/ld: /usr/lib/debug/usr/lib/i386-linux-gnu/crt1.o(.debug_info): relocation 10 has invalid symbol index 13
+/usr/bin/ld: /usr/lib/debug/usr/lib/i386-linux-gnu/crt1.o(.debug_info): relocation 11 has invalid symbol index 13
+/usr/bin/ld: /usr/lib/debug/usr/lib/i386-linux-gnu/crt1.o(.debug_info): relocation 12 has invalid symbol index 13
+/usr/bin/ld: /usr/lib/debug/usr/lib/i386-linux-gnu/crt1.o(.debug_info): relocation 13 has invalid symbol index 13
+/usr/bin/ld: /usr/lib/debug/usr/lib/i386-linux-gnu/crt1.o(.debug_info): relocation 14 has invalid symbol index 13
+/usr/bin/ld: /usr/lib/debug/usr/lib/i386-linux-gnu/crt1.o(.debug_info): relocation 15 has invalid symbol index 13
+/usr/bin/ld: /usr/lib/debug/usr/lib/i386-linux-gnu/crt1.o(.debug_info): relocation 16 has invalid symbol index 13
+/usr/bin/ld: /usr/lib/debug/usr/lib/i386-linux-gnu/crt1.o(.debug_info): relocation 17 has invalid symbol index 13
+/usr/bin/ld: /usr/lib/debug/usr/lib/i386-linux-gnu/crt1.o(.debug_info): relocation 18 has invalid symbol index 13
+/usr/bin/ld: /usr/lib/debug/usr/lib/i386-linux-gnu/crt1.o(.debug_info): relocation 19 has invalid symbol index 13
+/usr/bin/ld: /usr/lib/debug/usr/lib/i386-linux-gnu/crt1.o(.debug_info): relocation 20 has invalid symbol index 13
+/usr/bin/ld: /usr/lib/debug/usr/lib/i386-linux-gnu/crt1.o(.debug_info): relocation 21 has invalid symbol index 22
+/usr/bin/ld: /usr/lib/debug/usr/lib/i386-linux-gnu/crt1.o(.debug_line): relocation 0 has invalid symbol index 2
+/usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu/crt1.o: In function `_start':
+(.text+0x18): undefined reference to `main'
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTC_102d2] Error 1
+make[1]: Leaving directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+make: *** [cmTC_102d2/fast] Error 2
+
+
+Performing Curl Test HAVE_GETHOSTBYADDR_R_5 failed with the following output:
+Change Dir: /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_4b12a/fast && make  -f CMakeFiles/cmTC_4b12a.dir/build.make CMakeFiles/cmTC_4b12a.dir/build
+make[1]: Entering directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4b12a.dir/CurlTests.c.o
+/usr/bin/gcc   -w -DHAVE_GETHOSTBYADDR_R_5  -DHAVE_STDIO_H -DHAVE_INTTYPES_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UIO_H -DHAVE_SYS_UN_H -DHAVE_SYS_XATTR_H -DHAVE_ALLOCA_H -DHAVE_ARPA_INET_H -DHAVE_ARPA_TFTP_H -DHAVE_ASSERT_H -DHAVE_ERR_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_SETJMP_H -DHAVE_SGTTY_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_STRINGS_H -DHAVE_STROPTS_H -DHAVE_TERMIO_H -DHAVE_TERMIOS_H -DHAVE_TIME_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -DHAVE_STDDEF_H -DHAVE_DLFCN_H -DHAVE_MALLOC_H -DHAVE_MEMORY_H -DHAVE_NETINET_IF_ETHER_H -DHAVE_STDINT_H -DHAVE_SYS_UTSNAME_H -std=gnu99 -o CMakeFiles/cmTC_4b12a.dir/CurlTests.c.o -c /home/haihem/Bureau/books/vscode/cmake-3.20.2/Utilities/cmcurl/CMake/CurlTests.c
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/Utilities/cmcurl/CMake/CurlTests.c: In function ‘main’:
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/Utilities/cmcurl/CMake/CurlTests.c:106:23: error: storage size of ‘hdata’ isn’t known
+   struct hostent_data hdata;
+                       ^
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/Utilities/cmcurl/CMake/CurlTests.c:127:3: error: too few arguments to function ‘gethostbyaddr_r’
+   rc = gethostbyaddr_r(address, length, type, &h, &hdata);
+   ^
+In file included from /home/haihem/Bureau/books/vscode/cmake-3.20.2/Utilities/cmcurl/CMake/CurlTests.c:93:0:
+/usr/include/netdb.h:172:12: note: declared here
+ extern int gethostbyaddr_r (const void *__restrict __addr, __socklen_t __len,
+            ^
+make[1]: *** [CMakeFiles/cmTC_4b12a.dir/CurlTests.c.o] Error 1
+make[1]: Leaving directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+make: *** [cmTC_4b12a/fast] Error 2
+
+
+Performing Curl Test HAVE_GETHOSTBYADDR_R_7 failed with the following output:
+Change Dir: /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_78cec/fast && make  -f CMakeFiles/cmTC_78cec.dir/build.make CMakeFiles/cmTC_78cec.dir/build
+make[1]: Entering directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_78cec.dir/CurlTests.c.o
+/usr/bin/gcc   -w -DHAVE_GETHOSTBYADDR_R_7  -DHAVE_STDIO_H -DHAVE_INTTYPES_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UIO_H -DHAVE_SYS_UN_H -DHAVE_SYS_XATTR_H -DHAVE_ALLOCA_H -DHAVE_ARPA_INET_H -DHAVE_ARPA_TFTP_H -DHAVE_ASSERT_H -DHAVE_ERR_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_SETJMP_H -DHAVE_SGTTY_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_STRINGS_H -DHAVE_STROPTS_H -DHAVE_TERMIO_H -DHAVE_TERMIOS_H -DHAVE_TIME_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -DHAVE_STDDEF_H -DHAVE_DLFCN_H -DHAVE_MALLOC_H -DHAVE_MEMORY_H -DHAVE_NETINET_IF_ETHER_H -DHAVE_STDINT_H -DHAVE_SYS_UTSNAME_H -std=gnu99 -o CMakeFiles/cmTC_78cec.dir/CurlTests.c.o -c /home/haihem/Bureau/books/vscode/cmake-3.20.2/Utilities/cmcurl/CMake/CurlTests.c
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/Utilities/cmcurl/CMake/CurlTests.c: In function ‘main’:
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/Utilities/cmcurl/CMake/CurlTests.c:131:3: error: too few arguments to function ‘gethostbyaddr_r’
+   hp = gethostbyaddr_r(address, length, type, &h, buffer, 8192, &h_errnop);
+   ^
+In file included from /home/haihem/Bureau/books/vscode/cmake-3.20.2/Utilities/cmcurl/CMake/CurlTests.c:93:0:
+/usr/include/netdb.h:172:12: note: declared here
+ extern int gethostbyaddr_r (const void *__restrict __addr, __socklen_t __len,
+            ^
+make[1]: *** [CMakeFiles/cmTC_78cec.dir/CurlTests.c.o] Error 1
+make[1]: Leaving directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+make: *** [cmTC_78cec/fast] Error 2
+
+
+Performing Curl Test HAVE_GETHOSTBYADDR_R_5_REENTRANT failed with the following output:
+Change Dir: /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_836f8/fast && make  -f CMakeFiles/cmTC_836f8.dir/build.make CMakeFiles/cmTC_836f8.dir/build
+make[1]: Entering directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_836f8.dir/CurlTests.c.o
+/usr/bin/gcc   -w -DHAVE_GETHOSTBYADDR_R_5_REENTRANT  -DHAVE_STDIO_H -DHAVE_INTTYPES_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UIO_H -DHAVE_SYS_UN_H -DHAVE_SYS_XATTR_H -DHAVE_ALLOCA_H -DHAVE_ARPA_INET_H -DHAVE_ARPA_TFTP_H -DHAVE_ASSERT_H -DHAVE_ERR_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_SETJMP_H -DHAVE_SGTTY_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_STRINGS_H -DHAVE_STROPTS_H -DHAVE_TERMIO_H -DHAVE_TERMIOS_H -DHAVE_TIME_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -DHAVE_STDDEF_H -DHAVE_DLFCN_H -DHAVE_MALLOC_H -DHAVE_MEMORY_H -DHAVE_NETINET_IF_ETHER_H -DHAVE_STDINT_H -DHAVE_SYS_UTSNAME_H -std=gnu99 -o CMakeFiles/cmTC_836f8.dir/CurlTests.c.o -c /home/haihem/Bureau/books/vscode/cmake-3.20.2/Utilities/cmcurl/CMake/CurlTests.c
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/Utilities/cmcurl/CMake/CurlTests.c: In function ‘main’:
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/Utilities/cmcurl/CMake/CurlTests.c:106:23: error: storage size of ‘hdata’ isn’t known
+   struct hostent_data hdata;
+                       ^
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/Utilities/cmcurl/CMake/CurlTests.c:127:3: error: too few arguments to function ‘gethostbyaddr_r’
+   rc = gethostbyaddr_r(address, length, type, &h, &hdata);
+   ^
+In file included from /home/haihem/Bureau/books/vscode/cmake-3.20.2/Utilities/cmcurl/CMake/CurlTests.c:93:0:
+/usr/include/netdb.h:172:12: note: declared here
+ extern int gethostbyaddr_r (const void *__restrict __addr, __socklen_t __len,
+            ^
+make[1]: *** [CMakeFiles/cmTC_836f8.dir/CurlTests.c.o] Error 1
+make[1]: Leaving directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+make: *** [cmTC_836f8/fast] Error 2
+
+
+Performing Curl Test HAVE_GETHOSTBYADDR_R_7_REENTRANT failed with the following output:
+Change Dir: /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_edaba/fast && make  -f CMakeFiles/cmTC_edaba.dir/build.make CMakeFiles/cmTC_edaba.dir/build
+make[1]: Entering directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_edaba.dir/CurlTests.c.o
+/usr/bin/gcc   -w -DHAVE_GETHOSTBYADDR_R_7_REENTRANT  -DHAVE_STDIO_H -DHAVE_INTTYPES_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UIO_H -DHAVE_SYS_UN_H -DHAVE_SYS_XATTR_H -DHAVE_ALLOCA_H -DHAVE_ARPA_INET_H -DHAVE_ARPA_TFTP_H -DHAVE_ASSERT_H -DHAVE_ERR_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_SETJMP_H -DHAVE_SGTTY_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_STRINGS_H -DHAVE_STROPTS_H -DHAVE_TERMIO_H -DHAVE_TERMIOS_H -DHAVE_TIME_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -DHAVE_STDDEF_H -DHAVE_DLFCN_H -DHAVE_MALLOC_H -DHAVE_MEMORY_H -DHAVE_NETINET_IF_ETHER_H -DHAVE_STDINT_H -DHAVE_SYS_UTSNAME_H -std=gnu99 -o CMakeFiles/cmTC_edaba.dir/CurlTests.c.o -c /home/haihem/Bureau/books/vscode/cmake-3.20.2/Utilities/cmcurl/CMake/CurlTests.c
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/Utilities/cmcurl/CMake/CurlTests.c: In function ‘main’:
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/Utilities/cmcurl/CMake/CurlTests.c:131:3: error: too few arguments to function ‘gethostbyaddr_r’
+   hp = gethostbyaddr_r(address, length, type, &h, buffer, 8192, &h_errnop);
+   ^
+In file included from /home/haihem/Bureau/books/vscode/cmake-3.20.2/Utilities/cmcurl/CMake/CurlTests.c:93:0:
+/usr/include/netdb.h:172:12: note: declared here
+ extern int gethostbyaddr_r (const void *__restrict __addr, __socklen_t __len,
+            ^
+make[1]: *** [CMakeFiles/cmTC_edaba.dir/CurlTests.c.o] Error 1
+make[1]: Leaving directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+make: *** [cmTC_edaba/fast] Error 2
+
+
+Performing Curl Test HAVE_GETHOSTBYNAME_R_3 failed with the following output:
+Change Dir: /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_07464/fast && make  -f CMakeFiles/cmTC_07464.dir/build.make CMakeFiles/cmTC_07464.dir/build
+make[1]: Entering directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_07464.dir/CurlTests.c.o
+/usr/bin/gcc   -w -DHAVE_GETHOSTBYNAME_R_3  -DHAVE_STDIO_H -DHAVE_INTTYPES_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UIO_H -DHAVE_SYS_UN_H -DHAVE_SYS_XATTR_H -DHAVE_ALLOCA_H -DHAVE_ARPA_INET_H -DHAVE_ARPA_TFTP_H -DHAVE_ASSERT_H -DHAVE_ERR_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_SETJMP_H -DHAVE_SGTTY_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_STRINGS_H -DHAVE_STROPTS_H -DHAVE_TERMIO_H -DHAVE_TERMIOS_H -DHAVE_TIME_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -DHAVE_STDDEF_H -DHAVE_DLFCN_H -DHAVE_MALLOC_H -DHAVE_MEMORY_H -DHAVE_NETINET_IF_ETHER_H -DHAVE_STDINT_H -DHAVE_SYS_UTSNAME_H -std=gnu99 -o CMakeFiles/cmTC_07464.dir/CurlTests.c.o -c /home/haihem/Bureau/books/vscode/cmake-3.20.2/Utilities/cmcurl/CMake/CurlTests.c
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/Utilities/cmcurl/CMake/CurlTests.c: In function ‘main’:
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/Utilities/cmcurl/CMake/CurlTests.c:106:23: error: storage size of ‘hdata’ isn’t known
+   struct hostent_data hdata;
+                       ^
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/Utilities/cmcurl/CMake/CurlTests.c:141:3: error: too few arguments to function ‘gethostbyname_r’
+   rc = gethostbyname_r(address, &h, &hdata);
+   ^
+In file included from /home/haihem/Bureau/books/vscode/cmake-3.20.2/Utilities/cmcurl/CMake/CurlTests.c:93:0:
+/usr/include/netdb.h:179:12: note: declared here
+ extern int gethostbyname_r (const char *__restrict __name,
+            ^
+make[1]: *** [CMakeFiles/cmTC_07464.dir/CurlTests.c.o] Error 1
+make[1]: Leaving directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+make: *** [cmTC_07464/fast] Error 2
+
+
+Performing Curl Test HAVE_GETHOSTBYNAME_R_5 failed with the following output:
+Change Dir: /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_08d27/fast && make  -f CMakeFiles/cmTC_08d27.dir/build.make CMakeFiles/cmTC_08d27.dir/build
+make[1]: Entering directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_08d27.dir/CurlTests.c.o
+/usr/bin/gcc   -w -DHAVE_GETHOSTBYNAME_R_5  -DHAVE_STDIO_H -DHAVE_INTTYPES_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UIO_H -DHAVE_SYS_UN_H -DHAVE_SYS_XATTR_H -DHAVE_ALLOCA_H -DHAVE_ARPA_INET_H -DHAVE_ARPA_TFTP_H -DHAVE_ASSERT_H -DHAVE_ERR_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_SETJMP_H -DHAVE_SGTTY_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_STRINGS_H -DHAVE_STROPTS_H -DHAVE_TERMIO_H -DHAVE_TERMIOS_H -DHAVE_TIME_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -DHAVE_STDDEF_H -DHAVE_DLFCN_H -DHAVE_MALLOC_H -DHAVE_MEMORY_H -DHAVE_NETINET_IF_ETHER_H -DHAVE_STDINT_H -DHAVE_SYS_UTSNAME_H -std=gnu99 -o CMakeFiles/cmTC_08d27.dir/CurlTests.c.o -c /home/haihem/Bureau/books/vscode/cmake-3.20.2/Utilities/cmcurl/CMake/CurlTests.c
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/Utilities/cmcurl/CMake/CurlTests.c: In function ‘main’:
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/Utilities/cmcurl/CMake/CurlTests.c:144:3: error: too few arguments to function ‘gethostbyname_r’
+   rc = gethostbyname_r(address, &h, buffer, 8192, &h_errnop);
+   ^
+In file included from /home/haihem/Bureau/books/vscode/cmake-3.20.2/Utilities/cmcurl/CMake/CurlTests.c:93:0:
+/usr/include/netdb.h:179:12: note: declared here
+ extern int gethostbyname_r (const char *__restrict __name,
+            ^
+make[1]: *** [CMakeFiles/cmTC_08d27.dir/CurlTests.c.o] Error 1
+make[1]: Leaving directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+make: *** [cmTC_08d27/fast] Error 2
+
+
+Performing Curl Test HAVE_GETHOSTBYNAME_R_3_REENTRANT failed with the following output:
+Change Dir: /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_9e4e5/fast && make  -f CMakeFiles/cmTC_9e4e5.dir/build.make CMakeFiles/cmTC_9e4e5.dir/build
+make[1]: Entering directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9e4e5.dir/CurlTests.c.o
+/usr/bin/gcc   -w -DHAVE_GETHOSTBYNAME_R_3_REENTRANT  -DHAVE_STDIO_H -DHAVE_INTTYPES_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UIO_H -DHAVE_SYS_UN_H -DHAVE_SYS_XATTR_H -DHAVE_ALLOCA_H -DHAVE_ARPA_INET_H -DHAVE_ARPA_TFTP_H -DHAVE_ASSERT_H -DHAVE_ERR_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_SETJMP_H -DHAVE_SGTTY_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_STRINGS_H -DHAVE_STROPTS_H -DHAVE_TERMIO_H -DHAVE_TERMIOS_H -DHAVE_TIME_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -DHAVE_STDDEF_H -DHAVE_DLFCN_H -DHAVE_MALLOC_H -DHAVE_MEMORY_H -DHAVE_NETINET_IF_ETHER_H -DHAVE_STDINT_H -DHAVE_SYS_UTSNAME_H -std=gnu99 -o CMakeFiles/cmTC_9e4e5.dir/CurlTests.c.o -c /home/haihem/Bureau/books/vscode/cmake-3.20.2/Utilities/cmcurl/CMake/CurlTests.c
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/Utilities/cmcurl/CMake/CurlTests.c: In function ‘main’:
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/Utilities/cmcurl/CMake/CurlTests.c:106:23: error: storage size of ‘hdata’ isn’t known
+   struct hostent_data hdata;
+                       ^
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/Utilities/cmcurl/CMake/CurlTests.c:141:3: error: too few arguments to function ‘gethostbyname_r’
+   rc = gethostbyname_r(address, &h, &hdata);
+   ^
+In file included from /home/haihem/Bureau/books/vscode/cmake-3.20.2/Utilities/cmcurl/CMake/CurlTests.c:93:0:
+/usr/include/netdb.h:179:12: note: declared here
+ extern int gethostbyname_r (const char *__restrict __name,
+            ^
+make[1]: *** [CMakeFiles/cmTC_9e4e5.dir/CurlTests.c.o] Error 1
+make[1]: Leaving directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+make: *** [cmTC_9e4e5/fast] Error 2
+
+
+Performing Curl Test HAVE_GETHOSTBYNAME_R_5_REENTRANT failed with the following output:
+Change Dir: /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_ce05b/fast && make  -f CMakeFiles/cmTC_ce05b.dir/build.make CMakeFiles/cmTC_ce05b.dir/build
+make[1]: Entering directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ce05b.dir/CurlTests.c.o
+/usr/bin/gcc   -w -DHAVE_GETHOSTBYNAME_R_5_REENTRANT  -DHAVE_STDIO_H -DHAVE_INTTYPES_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UIO_H -DHAVE_SYS_UN_H -DHAVE_SYS_XATTR_H -DHAVE_ALLOCA_H -DHAVE_ARPA_INET_H -DHAVE_ARPA_TFTP_H -DHAVE_ASSERT_H -DHAVE_ERR_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_SETJMP_H -DHAVE_SGTTY_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_STRINGS_H -DHAVE_STROPTS_H -DHAVE_TERMIO_H -DHAVE_TERMIOS_H -DHAVE_TIME_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -DHAVE_STDDEF_H -DHAVE_DLFCN_H -DHAVE_MALLOC_H -DHAVE_MEMORY_H -DHAVE_NETINET_IF_ETHER_H -DHAVE_STDINT_H -DHAVE_SYS_UTSNAME_H -std=gnu99 -o CMakeFiles/cmTC_ce05b.dir/CurlTests.c.o -c /home/haihem/Bureau/books/vscode/cmake-3.20.2/Utilities/cmcurl/CMake/CurlTests.c
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/Utilities/cmcurl/CMake/CurlTests.c: In function ‘main’:
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/Utilities/cmcurl/CMake/CurlTests.c:144:3: error: too few arguments to function ‘gethostbyname_r’
+   rc = gethostbyname_r(address, &h, buffer, 8192, &h_errnop);
+   ^
+In file included from /home/haihem/Bureau/books/vscode/cmake-3.20.2/Utilities/cmcurl/CMake/CurlTests.c:93:0:
+/usr/include/netdb.h:179:12: note: declared here
+ extern int gethostbyname_r (const char *__restrict __name,
+            ^
+make[1]: *** [CMakeFiles/cmTC_ce05b.dir/CurlTests.c.o] Error 1
+make[1]: Leaving directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+make: *** [cmTC_ce05b/fast] Error 2
+
+
+Performing Curl Test HAVE_INET_NTOA_R_DECL failed with the following output:
+Change Dir: /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_65bd3/fast && make  -f CMakeFiles/cmTC_65bd3.dir/build.make CMakeFiles/cmTC_65bd3.dir/build
+make[1]: Entering directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_65bd3.dir/CurlTests.c.o
+/usr/bin/gcc   -w -DHAVE_INET_NTOA_R_DECL  -DHAVE_STDIO_H -DHAVE_INTTYPES_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UIO_H -DHAVE_SYS_UN_H -DHAVE_SYS_XATTR_H -DHAVE_ALLOCA_H -DHAVE_ARPA_INET_H -DHAVE_ARPA_TFTP_H -DHAVE_ASSERT_H -DHAVE_ERR_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_SETJMP_H -DHAVE_SGTTY_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_STRINGS_H -DHAVE_STROPTS_H -DHAVE_TERMIO_H -DHAVE_TERMIOS_H -DHAVE_TIME_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -DHAVE_STDDEF_H -DHAVE_DLFCN_H -DHAVE_MALLOC_H -DHAVE_MEMORY_H -DHAVE_NETINET_IF_ETHER_H -DHAVE_STDINT_H -DHAVE_SYS_UTSNAME_H -std=gnu99 -o CMakeFiles/cmTC_65bd3.dir/CurlTests.c.o -c /home/haihem/Bureau/books/vscode/cmake-3.20.2/Utilities/cmcurl/CMake/CurlTests.c
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/Utilities/cmcurl/CMake/CurlTests.c: In function ‘main’:
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/Utilities/cmcurl/CMake/CurlTests.c:244:21: error: ‘inet_ntoa_r’ undeclared (first use in this function)
+   func = (func_type)inet_ntoa_r;
+                     ^
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/Utilities/cmcurl/CMake/CurlTests.c:244:21: note: each undeclared identifier is reported only once for each function it appears in
+make[1]: *** [CMakeFiles/cmTC_65bd3.dir/CurlTests.c.o] Error 1
+make[1]: Leaving directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+make: *** [cmTC_65bd3/fast] Error 2
+
+
+Performing Curl Test HAVE_INET_NTOA_R_DECL_REENTRANT failed with the following output:
+Change Dir: /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_3ff80/fast && make  -f CMakeFiles/cmTC_3ff80.dir/build.make CMakeFiles/cmTC_3ff80.dir/build
+make[1]: Entering directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3ff80.dir/CurlTests.c.o
+/usr/bin/gcc   -w -DHAVE_INET_NTOA_R_DECL_REENTRANT  -DHAVE_STDIO_H -DHAVE_INTTYPES_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UIO_H -DHAVE_SYS_UN_H -DHAVE_SYS_XATTR_H -DHAVE_ALLOCA_H -DHAVE_ARPA_INET_H -DHAVE_ARPA_TFTP_H -DHAVE_ASSERT_H -DHAVE_ERR_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_SETJMP_H -DHAVE_SGTTY_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_STRINGS_H -DHAVE_STROPTS_H -DHAVE_TERMIO_H -DHAVE_TERMIOS_H -DHAVE_TIME_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -DHAVE_STDDEF_H -DHAVE_DLFCN_H -DHAVE_MALLOC_H -DHAVE_MEMORY_H -DHAVE_NETINET_IF_ETHER_H -DHAVE_STDINT_H -DHAVE_SYS_UTSNAME_H -std=gnu99 -o CMakeFiles/cmTC_3ff80.dir/CurlTests.c.o -c /home/haihem/Bureau/books/vscode/cmake-3.20.2/Utilities/cmcurl/CMake/CurlTests.c
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/Utilities/cmcurl/CMake/CurlTests.c: In function ‘main’:
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/Utilities/cmcurl/CMake/CurlTests.c:260:22: error: ‘inet_ntoa_r’ undeclared (first use in this function)
+   func = (func_type)&inet_ntoa_r;
+                      ^
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/Utilities/cmcurl/CMake/CurlTests.c:260:22: note: each undeclared identifier is reported only once for each function it appears in
+make[1]: *** [CMakeFiles/cmTC_3ff80.dir/CurlTests.c.o] Error 1
+make[1]: Leaving directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+make: *** [cmTC_3ff80/fast] Error 2
+
+
+Performing Curl Test HAVE_GLIBC_STRERROR_R failed with the following output:
+Change Dir: /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_c75fd/fast && make  -f CMakeFiles/cmTC_c75fd.dir/build.make CMakeFiles/cmTC_c75fd.dir/build
+make[1]: Entering directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c75fd.dir/CurlTests.c.o
+/usr/bin/gcc   -w -DHAVE_GLIBC_STRERROR_R  -DHAVE_STDIO_H -DHAVE_INTTYPES_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UIO_H -DHAVE_SYS_UN_H -DHAVE_SYS_XATTR_H -DHAVE_ALLOCA_H -DHAVE_ARPA_INET_H -DHAVE_ARPA_TFTP_H -DHAVE_ASSERT_H -DHAVE_ERR_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_SETJMP_H -DHAVE_SGTTY_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_STRINGS_H -DHAVE_STROPTS_H -DHAVE_TERMIO_H -DHAVE_TERMIOS_H -DHAVE_TIME_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -DHAVE_STDDEF_H -DHAVE_DLFCN_H -DHAVE_MALLOC_H -DHAVE_MEMORY_H -DHAVE_NETINET_IF_ETHER_H -DHAVE_STDINT_H -DHAVE_SYS_UTSNAME_H -std=gnu99 -o CMakeFiles/cmTC_c75fd.dir/CurlTests.c.o -c /home/haihem/Bureau/books/vscode/cmake-3.20.2/Utilities/cmcurl/CMake/CurlTests.c
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/Utilities/cmcurl/CMake/CurlTests.c: In function ‘main’:
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/Utilities/cmcurl/CMake/CurlTests.c:521:51: error: subscripted value is neither array nor pointer nor vector
+   check(strerror_r(EACCES, buffer, sizeof(buffer))[0]);
+                                                   ^
+make[1]: *** [CMakeFiles/cmTC_c75fd.dir/CurlTests.c.o] Error 1
+make[1]: Leaving directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+make: *** [cmTC_c75fd/fast] Error 2
+
+
+Performing Curl Test HAVE_BUILTIN_AVAILABLE failed with the following output:
+Change Dir: /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_159ec/fast && make  -f CMakeFiles/cmTC_159ec.dir/build.make CMakeFiles/cmTC_159ec.dir/build
+make[1]: Entering directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_159ec.dir/CurlTests.c.o
+/usr/bin/gcc   -w -DHAVE_BUILTIN_AVAILABLE  -DHAVE_STDIO_H -DHAVE_INTTYPES_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UIO_H -DHAVE_SYS_UN_H -DHAVE_SYS_XATTR_H -DHAVE_ALLOCA_H -DHAVE_ARPA_INET_H -DHAVE_ARPA_TFTP_H -DHAVE_ASSERT_H -DHAVE_ERR_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_SETJMP_H -DHAVE_SGTTY_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_STRINGS_H -DHAVE_STROPTS_H -DHAVE_TERMIO_H -DHAVE_TERMIOS_H -DHAVE_TIME_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -DHAVE_STDDEF_H -DHAVE_DLFCN_H -DHAVE_MALLOC_H -DHAVE_MEMORY_H -DHAVE_NETINET_IF_ETHER_H -DHAVE_STDINT_H -DHAVE_SYS_UTSNAME_H -std=gnu99 -o CMakeFiles/cmTC_159ec.dir/CurlTests.c.o -c /home/haihem/Bureau/books/vscode/cmake-3.20.2/Utilities/cmcurl/CMake/CurlTests.c
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/Utilities/cmcurl/CMake/CurlTests.c: In function ‘main’:
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/Utilities/cmcurl/CMake/CurlTests.c:568:26: error: ‘macOS’ undeclared (first use in this function)
+   if(__builtin_available(macOS 10.12, *)) {}
+                          ^
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/Utilities/cmcurl/CMake/CurlTests.c:568:26: note: each undeclared identifier is reported only once for each function it appears in
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/Utilities/cmcurl/CMake/CurlTests.c:568:32: error: expected ‘)’ before numeric constant
+   if(__builtin_available(macOS 10.12, *)) {}
+                                ^
+make[1]: *** [CMakeFiles/cmTC_159ec.dir/CurlTests.c.o] Error 1
+make[1]: Leaving directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+make: *** [cmTC_159ec/fast] Error 2
+
+
+Determining if the getrandom exist failed with the following output:
+Change Dir: /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_3666b/fast && make  -f CMakeFiles/cmTC_3666b.dir/build.make CMakeFiles/cmTC_3666b.dir/build
+make[1]: Entering directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3666b.dir/CheckSymbolExists.c.o
+/usr/bin/gcc   -w  -std=gnu99 -o CMakeFiles/cmTC_3666b.dir/CheckSymbolExists.c.o -c /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:2:24: fatal error: sys/random.h: No such file or directory
+ #include <sys/random.h>
+                        ^
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_3666b.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+make: *** [cmTC_3666b/fast] Error 2
+
+
+File /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/random.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef getrandom
+  return ((int*)(&getrandom))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the arc4random_buf exist failed with the following output:
+Change Dir: /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_2cc71/fast && make  -f CMakeFiles/cmTC_2cc71.dir/build.make CMakeFiles/cmTC_2cc71.dir/build
+make[1]: Entering directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2cc71.dir/CheckSymbolExists.c.o
+/usr/bin/gcc   -w  -std=gnu99 -o CMakeFiles/cmTC_2cc71.dir/CheckSymbolExists.c.o -c /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: ‘arc4random_buf’ undeclared (first use in this function)
+   return ((int*)(&arc4random_buf))[argc];
+                   ^
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+make[1]: *** [CMakeFiles/cmTC_2cc71.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+make: *** [cmTC_2cc71/fast] Error 2
+
+
+File /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdlib.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef arc4random_buf
+  return ((int*)(&arc4random_buf))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the arc4random exist failed with the following output:
+Change Dir: /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_65f36/fast && make  -f CMakeFiles/cmTC_65f36.dir/build.make CMakeFiles/cmTC_65f36.dir/build
+make[1]: Entering directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_65f36.dir/CheckSymbolExists.c.o
+/usr/bin/gcc   -w  -std=gnu99 -o CMakeFiles/cmTC_65f36.dir/CheckSymbolExists.c.o -c /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: ‘arc4random’ undeclared (first use in this function)
+   return ((int*)(&arc4random))[argc];
+                   ^
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+make[1]: *** [CMakeFiles/cmTC_65f36.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+make: *** [cmTC_65f36/fast] Error 2
+
+
+File /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdlib.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef arc4random
+  return ((int*)(&arc4random))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Performing C SOURCE FILE Test HAVE_SYSCALL_GETRANDOM failed with the following output:
+Change Dir: /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_75f76/fast && make  -f CMakeFiles/cmTC_75f76.dir/build.make CMakeFiles/cmTC_75f76.dir/build
+make[1]: Entering directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_75f76.dir/src.c.o
+/usr/bin/gcc -DHAVE_SYSCALL_GETRANDOM  -w  -std=gnu99 -o CMakeFiles/cmTC_75f76.dir/src.c.o -c /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/src.c
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/src.c:6:21: error: ‘SYS_getrandom’ undeclared (first use in this function)
+             syscall(SYS_getrandom, NULL, 0, 0);
+                     ^
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/src.c:6:21: note: each undeclared identifier is reported only once for each function it appears in
+make[1]: *** [CMakeFiles/cmTC_75f76.dir/src.c.o] Error 1
+make[1]: Leaving directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+make: *** [cmTC_75f76/fast] Error 2
+
+
+Source file was:
+
+        #include <stdlib.h>  /* for NULL */
+        #include <unistd.h>  /* for syscall */
+        #include <sys/syscall.h>  /* for SYS_getrandom */
+        int main() {
+            syscall(SYS_getrandom, NULL, 0, 0);
+            return 0;
+        }
+Determining if files sys/types.h;ctype.h;copyfile.h exist failed with the following output:
+Change Dir: /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_b654d/fast && make  -f CMakeFiles/cmTC_b654d.dir/build.make CMakeFiles/cmTC_b654d.dir/build
+make[1]: Entering directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b654d.dir/HAVE_COPYFILE_H.c.o
+/usr/bin/gcc   -w  -std=gnu99 -o CMakeFiles/cmTC_b654d.dir/HAVE_COPYFILE_H.c.o -c /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CheckIncludeFiles/HAVE_COPYFILE_H.c
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CheckIncludeFiles/HAVE_COPYFILE_H.c:4:22: fatal error: copyfile.h: No such file or directory
+ #include <copyfile.h>
+                      ^
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_b654d.dir/HAVE_COPYFILE_H.c.o] Error 1
+make[1]: Leaving directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+make: *** [cmTC_b654d/fast] Error 2
+
+
+Source:
+/* */
+#include <sys/types.h>
+#include <ctype.h>
+#include <copyfile.h>
+
+
+int main(void){return 0;}
+
+Determining if files sys/types.h;ctype.h;direct.h exist failed with the following output:
+Change Dir: /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_2d3a0/fast && make  -f CMakeFiles/cmTC_2d3a0.dir/build.make CMakeFiles/cmTC_2d3a0.dir/build
+make[1]: Entering directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2d3a0.dir/HAVE_DIRECT_H.c.o
+/usr/bin/gcc   -w  -std=gnu99 -o CMakeFiles/cmTC_2d3a0.dir/HAVE_DIRECT_H.c.o -c /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CheckIncludeFiles/HAVE_DIRECT_H.c
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CheckIncludeFiles/HAVE_DIRECT_H.c:4:20: fatal error: direct.h: No such file or directory
+ #include <direct.h>
+                    ^
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_2d3a0.dir/HAVE_DIRECT_H.c.o] Error 1
+make[1]: Leaving directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+make: *** [cmTC_2d3a0/fast] Error 2
+
+
+Source:
+/* */
+#include <sys/types.h>
+#include <ctype.h>
+#include <direct.h>
+
+
+int main(void){return 0;}
+
+Determining if files sys/types.h;ctype.h;dlfcn.h;errno.h;ext2fs/ext2_fs.h exist failed with the following output:
+Change Dir: /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_8aa1e/fast && make  -f CMakeFiles/cmTC_8aa1e.dir/build.make CMakeFiles/cmTC_8aa1e.dir/build
+make[1]: Entering directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8aa1e.dir/HAVE_EXT2FS_EXT2_FS_H.c.o
+/usr/bin/gcc   -w  -std=gnu99 -o CMakeFiles/cmTC_8aa1e.dir/HAVE_EXT2FS_EXT2_FS_H.c.o -c /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CheckIncludeFiles/HAVE_EXT2FS_EXT2_FS_H.c
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CheckIncludeFiles/HAVE_EXT2FS_EXT2_FS_H.c:6:28: fatal error: ext2fs/ext2_fs.h: No such file or directory
+ #include <ext2fs/ext2_fs.h>
+                            ^
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_8aa1e.dir/HAVE_EXT2FS_EXT2_FS_H.c.o] Error 1
+make[1]: Leaving directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+make: *** [cmTC_8aa1e/fast] Error 2
+
+
+Source:
+/* */
+#include <sys/types.h>
+#include <ctype.h>
+#include <dlfcn.h>
+#include <errno.h>
+#include <ext2fs/ext2_fs.h>
+
+
+int main(void){return 0;}
+
+Performing C SOURCE FILE Test HAVE_WORKING_EXT2_IOC_GETFLAGS failed with the following output:
+Change Dir: /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_a8168/fast && make  -f CMakeFiles/cmTC_a8168.dir/build.make CMakeFiles/cmTC_a8168.dir/build
+make[1]: Entering directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a8168.dir/src.c.o
+/usr/bin/gcc -DHAVE_WORKING_EXT2_IOC_GETFLAGS  -w  -std=gnu99 -o CMakeFiles/cmTC_a8168.dir/src.c.o -c /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/src.c
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/src.c:2:28: fatal error: ext2fs/ext2_fs.h: No such file or directory
+ #include <ext2fs/ext2_fs.h>
+                            ^
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_a8168.dir/src.c.o] Error 1
+make[1]: Leaving directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+make: *** [cmTC_a8168/fast] Error 2
+
+
+Source file was:
+#include <sys/ioctl.h>
+#include <ext2fs/ext2_fs.h>
+int main(void) { return EXT2_IOC_GETFLAGS; }
+Determining if files sys/types.h;ctype.h;dlfcn.h;errno.h;fcntl.h;grp.h;langinfo.h;limits.h;linux/types.h;linux/fiemap.h;linux/fs.h;linux/magic.h;locale.h;membership.h exist failed with the following output:
+Change Dir: /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_31694/fast && make  -f CMakeFiles/cmTC_31694.dir/build.make CMakeFiles/cmTC_31694.dir/build
+make[1]: Entering directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_31694.dir/HAVE_MEMBERSHIP_H.c.o
+/usr/bin/gcc   -w  -std=gnu99 -o CMakeFiles/cmTC_31694.dir/HAVE_MEMBERSHIP_H.c.o -c /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CheckIncludeFiles/HAVE_MEMBERSHIP_H.c
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CheckIncludeFiles/HAVE_MEMBERSHIP_H.c:15:24: fatal error: membership.h: No such file or directory
+ #include <membership.h>
+                        ^
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_31694.dir/HAVE_MEMBERSHIP_H.c.o] Error 1
+make[1]: Leaving directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+make: *** [cmTC_31694/fast] Error 2
+
+
+Source:
+/* */
+#include <sys/types.h>
+#include <ctype.h>
+#include <dlfcn.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <grp.h>
+#include <langinfo.h>
+#include <limits.h>
+#include <linux/types.h>
+#include <linux/fiemap.h>
+#include <linux/fs.h>
+#include <linux/magic.h>
+#include <locale.h>
+#include <membership.h>
+
+
+int main(void){return 0;}
+
+Determining if files sys/types.h;ctype.h;dlfcn.h;errno.h;fcntl.h;grp.h;langinfo.h;limits.h;linux/types.h;linux/fiemap.h;linux/fs.h;linux/magic.h;locale.h;memory.h;paths.h;poll.h;pthread.h;pwd.h;readpassphrase.h exist failed with the following output:
+Change Dir: /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_b396e/fast && make  -f CMakeFiles/cmTC_b396e.dir/build.make CMakeFiles/cmTC_b396e.dir/build
+make[1]: Entering directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b396e.dir/HAVE_READPASSPHRASE_H.c.o
+/usr/bin/gcc   -w  -std=gnu99 -o CMakeFiles/cmTC_b396e.dir/HAVE_READPASSPHRASE_H.c.o -c /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CheckIncludeFiles/HAVE_READPASSPHRASE_H.c
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CheckIncludeFiles/HAVE_READPASSPHRASE_H.c:20:28: fatal error: readpassphrase.h: No such file or directory
+ #include <readpassphrase.h>
+                            ^
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_b396e.dir/HAVE_READPASSPHRASE_H.c.o] Error 1
+make[1]: Leaving directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+make: *** [cmTC_b396e/fast] Error 2
+
+
+Source:
+/* */
+#include <sys/types.h>
+#include <ctype.h>
+#include <dlfcn.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <grp.h>
+#include <langinfo.h>
+#include <limits.h>
+#include <linux/types.h>
+#include <linux/fiemap.h>
+#include <linux/fs.h>
+#include <linux/magic.h>
+#include <locale.h>
+#include <memory.h>
+#include <paths.h>
+#include <poll.h>
+#include <pthread.h>
+#include <pwd.h>
+#include <readpassphrase.h>
+
+
+int main(void){return 0;}
+
+Determining if files sys/types.h;ctype.h;dlfcn.h;errno.h;fcntl.h;grp.h;langinfo.h;limits.h;linux/types.h;linux/fiemap.h;linux/fs.h;linux/magic.h;locale.h;memory.h;paths.h;poll.h;pthread.h;pwd.h;regex.h;signal.h;spawn.h;stdarg.h;stdlib.h;string.h;strings.h;sys/acl.h exist failed with the following output:
+Change Dir: /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_e15f8/fast && make  -f CMakeFiles/cmTC_e15f8.dir/build.make CMakeFiles/cmTC_e15f8.dir/build
+make[1]: Entering directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e15f8.dir/HAVE_SYS_ACL_H.c.o
+/usr/bin/gcc   -w  -std=gnu99 -o CMakeFiles/cmTC_e15f8.dir/HAVE_SYS_ACL_H.c.o -c /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CheckIncludeFiles/HAVE_SYS_ACL_H.c
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CheckIncludeFiles/HAVE_SYS_ACL_H.c:27:21: fatal error: sys/acl.h: No such file or directory
+ #include <sys/acl.h>
+                     ^
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_e15f8.dir/HAVE_SYS_ACL_H.c.o] Error 1
+make[1]: Leaving directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+make: *** [cmTC_e15f8/fast] Error 2
+
+
+Source:
+/* */
+#include <sys/types.h>
+#include <ctype.h>
+#include <dlfcn.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <grp.h>
+#include <langinfo.h>
+#include <limits.h>
+#include <linux/types.h>
+#include <linux/fiemap.h>
+#include <linux/fs.h>
+#include <linux/magic.h>
+#include <locale.h>
+#include <memory.h>
+#include <paths.h>
+#include <poll.h>
+#include <pthread.h>
+#include <pwd.h>
+#include <regex.h>
+#include <signal.h>
+#include <spawn.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/acl.h>
+
+
+int main(void){return 0;}
+
+Determining if files sys/types.h;ctype.h;dlfcn.h;errno.h;fcntl.h;grp.h;langinfo.h;limits.h;linux/types.h;linux/fiemap.h;linux/fs.h;linux/magic.h;locale.h;memory.h;paths.h;poll.h;pthread.h;pwd.h;regex.h;signal.h;spawn.h;stdarg.h;stdlib.h;string.h;strings.h;sys/cdefs.h;sys/extattr.h exist failed with the following output:
+Change Dir: /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_5360a/fast && make  -f CMakeFiles/cmTC_5360a.dir/build.make CMakeFiles/cmTC_5360a.dir/build
+make[1]: Entering directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5360a.dir/HAVE_SYS_EXTATTR_H.c.o
+/usr/bin/gcc   -w  -std=gnu99 -o CMakeFiles/cmTC_5360a.dir/HAVE_SYS_EXTATTR_H.c.o -c /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CheckIncludeFiles/HAVE_SYS_EXTATTR_H.c
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CheckIncludeFiles/HAVE_SYS_EXTATTR_H.c:28:25: fatal error: sys/extattr.h: No such file or directory
+ #include <sys/extattr.h>
+                         ^
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_5360a.dir/HAVE_SYS_EXTATTR_H.c.o] Error 1
+make[1]: Leaving directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+make: *** [cmTC_5360a/fast] Error 2
+
+
+Source:
+/* */
+#include <sys/types.h>
+#include <ctype.h>
+#include <dlfcn.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <grp.h>
+#include <langinfo.h>
+#include <limits.h>
+#include <linux/types.h>
+#include <linux/fiemap.h>
+#include <linux/fs.h>
+#include <linux/magic.h>
+#include <locale.h>
+#include <memory.h>
+#include <paths.h>
+#include <poll.h>
+#include <pthread.h>
+#include <pwd.h>
+#include <regex.h>
+#include <signal.h>
+#include <spawn.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/cdefs.h>
+#include <sys/extattr.h>
+
+
+int main(void){return 0;}
+
+Determining if files sys/types.h;ctype.h;dlfcn.h;errno.h;fcntl.h;grp.h;langinfo.h;limits.h;linux/types.h;linux/fiemap.h;linux/fs.h;linux/magic.h;locale.h;memory.h;paths.h;poll.h;pthread.h;pwd.h;regex.h;signal.h;spawn.h;stdarg.h;stdlib.h;string.h;strings.h;sys/cdefs.h;sys/ioctl.h;sys/mkdev.h exist failed with the following output:
+Change Dir: /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_4a366/fast && make  -f CMakeFiles/cmTC_4a366.dir/build.make CMakeFiles/cmTC_4a366.dir/build
+make[1]: Entering directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4a366.dir/HAVE_SYS_MKDEV_H.c.o
+/usr/bin/gcc   -w  -std=gnu99 -o CMakeFiles/cmTC_4a366.dir/HAVE_SYS_MKDEV_H.c.o -c /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CheckIncludeFiles/HAVE_SYS_MKDEV_H.c
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CheckIncludeFiles/HAVE_SYS_MKDEV_H.c:29:23: fatal error: sys/mkdev.h: No such file or directory
+ #include <sys/mkdev.h>
+                       ^
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_4a366.dir/HAVE_SYS_MKDEV_H.c.o] Error 1
+make[1]: Leaving directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+make: *** [cmTC_4a366/fast] Error 2
+
+
+Source:
+/* */
+#include <sys/types.h>
+#include <ctype.h>
+#include <dlfcn.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <grp.h>
+#include <langinfo.h>
+#include <limits.h>
+#include <linux/types.h>
+#include <linux/fiemap.h>
+#include <linux/fs.h>
+#include <linux/magic.h>
+#include <locale.h>
+#include <memory.h>
+#include <paths.h>
+#include <poll.h>
+#include <pthread.h>
+#include <pwd.h>
+#include <regex.h>
+#include <signal.h>
+#include <spawn.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/cdefs.h>
+#include <sys/ioctl.h>
+#include <sys/mkdev.h>
+
+
+int main(void){return 0;}
+
+Determining if files sys/types.h;ctype.h;dlfcn.h;errno.h;fcntl.h;grp.h;langinfo.h;limits.h;linux/types.h;linux/fiemap.h;linux/fs.h;linux/magic.h;locale.h;memory.h;paths.h;poll.h;pthread.h;pwd.h;regex.h;signal.h;spawn.h;stdarg.h;stdlib.h;string.h;strings.h;sys/cdefs.h;sys/ioctl.h;sys/mount.h exist failed with the following output:
+Change Dir: /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_71b63/fast && make  -f CMakeFiles/cmTC_71b63.dir/build.make CMakeFiles/cmTC_71b63.dir/build
+make[1]: Entering directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_71b63.dir/HAVE_SYS_MOUNT_H.c.o
+/usr/bin/gcc   -w  -std=gnu99 -o CMakeFiles/cmTC_71b63.dir/HAVE_SYS_MOUNT_H.c.o -c /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CheckIncludeFiles/HAVE_SYS_MOUNT_H.c
+In file included from /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CheckIncludeFiles/HAVE_SYS_MOUNT_H.c:12:0:
+/usr/include/i386-linux-gnu/sys/mount.h:35:3: error: expected identifier before numeric constant
+   MS_RDONLY = 1,  /* Mount read-only.  */
+   ^
+make[1]: *** [CMakeFiles/cmTC_71b63.dir/HAVE_SYS_MOUNT_H.c.o] Error 1
+make[1]: Leaving directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+make: *** [cmTC_71b63/fast] Error 2
+
+
+Source:
+/* */
+#include <sys/types.h>
+#include <ctype.h>
+#include <dlfcn.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <grp.h>
+#include <langinfo.h>
+#include <limits.h>
+#include <linux/types.h>
+#include <linux/fiemap.h>
+#include <linux/fs.h>
+#include <linux/magic.h>
+#include <locale.h>
+#include <memory.h>
+#include <paths.h>
+#include <poll.h>
+#include <pthread.h>
+#include <pwd.h>
+#include <regex.h>
+#include <signal.h>
+#include <spawn.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/cdefs.h>
+#include <sys/ioctl.h>
+#include <sys/mount.h>
+
+
+int main(void){return 0;}
+
+Determining if files sys/types.h;ctype.h;dlfcn.h;errno.h;fcntl.h;grp.h;langinfo.h;limits.h;linux/types.h;linux/fiemap.h;linux/fs.h;linux/magic.h;locale.h;memory.h;paths.h;poll.h;pthread.h;pwd.h;regex.h;signal.h;spawn.h;stdarg.h;stdlib.h;string.h;strings.h;sys/cdefs.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/richacl.h exist failed with the following output:
+Change Dir: /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_2cfb8/fast && make  -f CMakeFiles/cmTC_2cfb8.dir/build.make CMakeFiles/cmTC_2cfb8.dir/build
+make[1]: Entering directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2cfb8.dir/HAVE_SYS_RICHACL_H.c.o
+/usr/bin/gcc   -w  -std=gnu99 -o CMakeFiles/cmTC_2cfb8.dir/HAVE_SYS_RICHACL_H.c.o -c /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CheckIncludeFiles/HAVE_SYS_RICHACL_H.c
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CheckIncludeFiles/HAVE_SYS_RICHACL_H.c:31:25: fatal error: sys/richacl.h: No such file or directory
+ #include <sys/richacl.h>
+                         ^
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_2cfb8.dir/HAVE_SYS_RICHACL_H.c.o] Error 1
+make[1]: Leaving directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+make: *** [cmTC_2cfb8/fast] Error 2
+
+
+Source:
+/* */
+#include <sys/types.h>
+#include <ctype.h>
+#include <dlfcn.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <grp.h>
+#include <langinfo.h>
+#include <limits.h>
+#include <linux/types.h>
+#include <linux/fiemap.h>
+#include <linux/fs.h>
+#include <linux/magic.h>
+#include <locale.h>
+#include <memory.h>
+#include <paths.h>
+#include <poll.h>
+#include <pthread.h>
+#include <pwd.h>
+#include <regex.h>
+#include <signal.h>
+#include <spawn.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/cdefs.h>
+#include <sys/ioctl.h>
+#include <sys/param.h>
+#include <sys/poll.h>
+#include <sys/richacl.h>
+
+
+int main(void){return 0;}
+
+Determining if files sys/types.h;ctype.h;dlfcn.h;errno.h;fcntl.h;grp.h;langinfo.h;limits.h;linux/types.h;linux/fiemap.h;linux/fs.h;linux/magic.h;locale.h;memory.h;paths.h;poll.h;pthread.h;pwd.h;regex.h;signal.h;spawn.h;stdarg.h;stdlib.h;string.h;strings.h;sys/cdefs.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/select.h;sys/stat.h;sys/statfs.h;sys/statvfs.h;sys/sysmacros.h;sys/time.h;sys/utsname.h;sys/vfs.h;sys/wait.h;sys/xattr.h;time.h;unistd.h;utime.h;wchar.h;wctype.h;windows.h exist failed with the following output:
+Change Dir: /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_3c50b/fast && make  -f CMakeFiles/cmTC_3c50b.dir/build.make CMakeFiles/cmTC_3c50b.dir/build
+make[1]: Entering directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3c50b.dir/HAVE_WINDOWS_H.c.o
+/usr/bin/gcc   -w  -std=gnu99 -o CMakeFiles/cmTC_3c50b.dir/HAVE_WINDOWS_H.c.o -c /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CheckIncludeFiles/HAVE_WINDOWS_H.c
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CheckIncludeFiles/HAVE_WINDOWS_H.c:46:21: fatal error: windows.h: No such file or directory
+ #include <windows.h>
+                     ^
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_3c50b.dir/HAVE_WINDOWS_H.c.o] Error 1
+make[1]: Leaving directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+make: *** [cmTC_3c50b/fast] Error 2
+
+
+Source:
+/* */
+#include <sys/types.h>
+#include <ctype.h>
+#include <dlfcn.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <grp.h>
+#include <langinfo.h>
+#include <limits.h>
+#include <linux/types.h>
+#include <linux/fiemap.h>
+#include <linux/fs.h>
+#include <linux/magic.h>
+#include <locale.h>
+#include <memory.h>
+#include <paths.h>
+#include <poll.h>
+#include <pthread.h>
+#include <pwd.h>
+#include <regex.h>
+#include <signal.h>
+#include <spawn.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/cdefs.h>
+#include <sys/ioctl.h>
+#include <sys/param.h>
+#include <sys/poll.h>
+#include <sys/select.h>
+#include <sys/stat.h>
+#include <sys/statfs.h>
+#include <sys/statvfs.h>
+#include <sys/sysmacros.h>
+#include <sys/time.h>
+#include <sys/utsname.h>
+#include <sys/vfs.h>
+#include <sys/wait.h>
+#include <sys/xattr.h>
+#include <time.h>
+#include <unistd.h>
+#include <utime.h>
+#include <wchar.h>
+#include <wctype.h>
+#include <windows.h>
+
+
+int main(void){return 0;}
+
+Determining if files sys/types.h;ctype.h;dlfcn.h;errno.h;fcntl.h;grp.h;langinfo.h;limits.h;linux/types.h;linux/fiemap.h;linux/fs.h;linux/magic.h;locale.h;memory.h;paths.h;poll.h;pthread.h;pwd.h;regex.h;signal.h;spawn.h;stdarg.h;stdlib.h;string.h;strings.h;sys/cdefs.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/select.h;sys/stat.h;sys/statfs.h;sys/statvfs.h;sys/sysmacros.h;sys/time.h;sys/utsname.h;sys/vfs.h;sys/wait.h;sys/xattr.h;time.h;unistd.h;utime.h;wchar.h;wctype.h;wincrypt.h exist failed with the following output:
+Change Dir: /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_90bd0/fast && make  -f CMakeFiles/cmTC_90bd0.dir/build.make CMakeFiles/cmTC_90bd0.dir/build
+make[1]: Entering directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_90bd0.dir/HAVE_WINCRYPT_H.c.o
+/usr/bin/gcc   -w  -std=gnu99 -o CMakeFiles/cmTC_90bd0.dir/HAVE_WINCRYPT_H.c.o -c /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CheckIncludeFiles/HAVE_WINCRYPT_H.c
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CheckIncludeFiles/HAVE_WINCRYPT_H.c:46:22: fatal error: wincrypt.h: No such file or directory
+ #include <wincrypt.h>
+                      ^
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_90bd0.dir/HAVE_WINCRYPT_H.c.o] Error 1
+make[1]: Leaving directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+make: *** [cmTC_90bd0/fast] Error 2
+
+
+Source:
+/* */
+#include <sys/types.h>
+#include <ctype.h>
+#include <dlfcn.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <grp.h>
+#include <langinfo.h>
+#include <limits.h>
+#include <linux/types.h>
+#include <linux/fiemap.h>
+#include <linux/fs.h>
+#include <linux/magic.h>
+#include <locale.h>
+#include <memory.h>
+#include <paths.h>
+#include <poll.h>
+#include <pthread.h>
+#include <pwd.h>
+#include <regex.h>
+#include <signal.h>
+#include <spawn.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/cdefs.h>
+#include <sys/ioctl.h>
+#include <sys/param.h>
+#include <sys/poll.h>
+#include <sys/select.h>
+#include <sys/stat.h>
+#include <sys/statfs.h>
+#include <sys/statvfs.h>
+#include <sys/sysmacros.h>
+#include <sys/time.h>
+#include <sys/utsname.h>
+#include <sys/vfs.h>
+#include <sys/wait.h>
+#include <sys/xattr.h>
+#include <time.h>
+#include <unistd.h>
+#include <utime.h>
+#include <wchar.h>
+#include <wctype.h>
+#include <wincrypt.h>
+
+
+int main(void){return 0;}
+
+Determining if files sys/types.h;ctype.h;dlfcn.h;errno.h;fcntl.h;grp.h;langinfo.h;limits.h;linux/types.h;linux/fiemap.h;linux/fs.h;linux/magic.h;locale.h;memory.h;paths.h;poll.h;pthread.h;pwd.h;regex.h;signal.h;spawn.h;stdarg.h;stdlib.h;string.h;strings.h;sys/cdefs.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/select.h;sys/stat.h;sys/statfs.h;sys/statvfs.h;sys/sysmacros.h;sys/time.h;sys/utsname.h;sys/vfs.h;sys/wait.h;sys/xattr.h;time.h;unistd.h;utime.h;wchar.h;wctype.h;winioctl.h exist failed with the following output:
+Change Dir: /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_a0220/fast && make  -f CMakeFiles/cmTC_a0220.dir/build.make CMakeFiles/cmTC_a0220.dir/build
+make[1]: Entering directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a0220.dir/HAVE_WINIOCTL_H.c.o
+/usr/bin/gcc   -w  -std=gnu99 -o CMakeFiles/cmTC_a0220.dir/HAVE_WINIOCTL_H.c.o -c /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CheckIncludeFiles/HAVE_WINIOCTL_H.c
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CheckIncludeFiles/HAVE_WINIOCTL_H.c:46:22: fatal error: winioctl.h: No such file or directory
+ #include <winioctl.h>
+                      ^
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_a0220.dir/HAVE_WINIOCTL_H.c.o] Error 1
+make[1]: Leaving directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+make: *** [cmTC_a0220/fast] Error 2
+
+
+Source:
+/* */
+#include <sys/types.h>
+#include <ctype.h>
+#include <dlfcn.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <grp.h>
+#include <langinfo.h>
+#include <limits.h>
+#include <linux/types.h>
+#include <linux/fiemap.h>
+#include <linux/fs.h>
+#include <linux/magic.h>
+#include <locale.h>
+#include <memory.h>
+#include <paths.h>
+#include <poll.h>
+#include <pthread.h>
+#include <pwd.h>
+#include <regex.h>
+#include <signal.h>
+#include <spawn.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/cdefs.h>
+#include <sys/ioctl.h>
+#include <sys/param.h>
+#include <sys/poll.h>
+#include <sys/select.h>
+#include <sys/stat.h>
+#include <sys/statfs.h>
+#include <sys/statvfs.h>
+#include <sys/sysmacros.h>
+#include <sys/time.h>
+#include <sys/utsname.h>
+#include <sys/vfs.h>
+#include <sys/wait.h>
+#include <sys/xattr.h>
+#include <time.h>
+#include <unistd.h>
+#include <utime.h>
+#include <wchar.h>
+#include <wctype.h>
+#include <winioctl.h>
+
+
+int main(void){return 0;}
+
+Determining if the function getvfsbyname exists failed with the following output:
+Change Dir: /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_73fa2/fast && make  -f CMakeFiles/cmTC_73fa2.dir/build.make CMakeFiles/cmTC_73fa2.dir/build
+make[1]: Entering directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_73fa2.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -w -DCHECK_FUNCTION_EXISTS=getvfsbyname  -fno-builtin -std=gnu99 -o CMakeFiles/cmTC_73fa2.dir/CheckFunctionExists.c.o -c /home/haihem/Bureau/books/vscode/cmake-3.20.2/Modules/CheckFunctionExists.c
+Linking C executable cmTC_73fa2
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/Bootstrap.cmk/cmake -E cmake_link_script CMakeFiles/cmTC_73fa2.dir/link.txt --verbose=1
+/usr/bin/gcc  -w -DCHECK_FUNCTION_EXISTS=getvfsbyname  -fno-builtin CMakeFiles/cmTC_73fa2.dir/CheckFunctionExists.c.o -o cmTC_73fa2 
+CMakeFiles/cmTC_73fa2.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x7): undefined reference to `getvfsbyname'
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTC_73fa2] Error 1
+make[1]: Leaving directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+make: *** [cmTC_73fa2/fast] Error 2
+
+
+
+Determining if the function lchflags exists failed with the following output:
+Change Dir: /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_d271d/fast && make  -f CMakeFiles/cmTC_d271d.dir/build.make CMakeFiles/cmTC_d271d.dir/build
+make[1]: Entering directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d271d.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -w -DCHECK_FUNCTION_EXISTS=lchflags  -fno-builtin -std=gnu99 -o CMakeFiles/cmTC_d271d.dir/CheckFunctionExists.c.o -c /home/haihem/Bureau/books/vscode/cmake-3.20.2/Modules/CheckFunctionExists.c
+Linking C executable cmTC_d271d
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/Bootstrap.cmk/cmake -E cmake_link_script CMakeFiles/cmTC_d271d.dir/link.txt --verbose=1
+/usr/bin/gcc  -w -DCHECK_FUNCTION_EXISTS=lchflags  -fno-builtin CMakeFiles/cmTC_d271d.dir/CheckFunctionExists.c.o -o cmTC_d271d 
+CMakeFiles/cmTC_d271d.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x7): undefined reference to `lchflags'
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTC_d271d] Error 1
+make[1]: Leaving directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+make: *** [cmTC_d271d/fast] Error 2
+
+
+
+Determining if the function readpassphrase exists failed with the following output:
+Change Dir: /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_32166/fast && make  -f CMakeFiles/cmTC_32166.dir/build.make CMakeFiles/cmTC_32166.dir/build
+make[1]: Entering directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_32166.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -w -DCHECK_FUNCTION_EXISTS=readpassphrase  -fno-builtin -std=gnu99 -o CMakeFiles/cmTC_32166.dir/CheckFunctionExists.c.o -c /home/haihem/Bureau/books/vscode/cmake-3.20.2/Modules/CheckFunctionExists.c
+Linking C executable cmTC_32166
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/Bootstrap.cmk/cmake -E cmake_link_script CMakeFiles/cmTC_32166.dir/link.txt --verbose=1
+/usr/bin/gcc  -w -DCHECK_FUNCTION_EXISTS=readpassphrase  -fno-builtin CMakeFiles/cmTC_32166.dir/CheckFunctionExists.c.o -o cmTC_32166 
+CMakeFiles/cmTC_32166.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x7): undefined reference to `readpassphrase'
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTC_32166] Error 1
+make[1]: Leaving directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+make: *** [cmTC_32166/fast] Error 2
+
+
+
+Determining if the function strncpy_s exists failed with the following output:
+Change Dir: /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_76a3c/fast && make  -f CMakeFiles/cmTC_76a3c.dir/build.make CMakeFiles/cmTC_76a3c.dir/build
+make[1]: Entering directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_76a3c.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -w -DCHECK_FUNCTION_EXISTS=strncpy_s  -fno-builtin -std=gnu99 -o CMakeFiles/cmTC_76a3c.dir/CheckFunctionExists.c.o -c /home/haihem/Bureau/books/vscode/cmake-3.20.2/Modules/CheckFunctionExists.c
+Linking C executable cmTC_76a3c
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/Bootstrap.cmk/cmake -E cmake_link_script CMakeFiles/cmTC_76a3c.dir/link.txt --verbose=1
+/usr/bin/gcc  -w -DCHECK_FUNCTION_EXISTS=strncpy_s  -fno-builtin CMakeFiles/cmTC_76a3c.dir/CheckFunctionExists.c.o -o cmTC_76a3c 
+CMakeFiles/cmTC_76a3c.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x7): undefined reference to `strncpy_s'
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTC_76a3c] Error 1
+make[1]: Leaving directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+make: *** [cmTC_76a3c/fast] Error 2
+
+
+
+Determining if the function _ctime64_s exists failed with the following output:
+Change Dir: /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_4fbc3/fast && make  -f CMakeFiles/cmTC_4fbc3.dir/build.make CMakeFiles/cmTC_4fbc3.dir/build
+make[1]: Entering directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4fbc3.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -w -DCHECK_FUNCTION_EXISTS=_ctime64_s  -fno-builtin -std=gnu99 -o CMakeFiles/cmTC_4fbc3.dir/CheckFunctionExists.c.o -c /home/haihem/Bureau/books/vscode/cmake-3.20.2/Modules/CheckFunctionExists.c
+Linking C executable cmTC_4fbc3
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/Bootstrap.cmk/cmake -E cmake_link_script CMakeFiles/cmTC_4fbc3.dir/link.txt --verbose=1
+/usr/bin/gcc  -w -DCHECK_FUNCTION_EXISTS=_ctime64_s  -fno-builtin CMakeFiles/cmTC_4fbc3.dir/CheckFunctionExists.c.o -o cmTC_4fbc3 
+CMakeFiles/cmTC_4fbc3.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x7): undefined reference to `_ctime64_s'
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTC_4fbc3] Error 1
+make[1]: Leaving directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+make: *** [cmTC_4fbc3/fast] Error 2
+
+
+
+Determining if the function _fseeki64 exists failed with the following output:
+Change Dir: /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_be90b/fast && make  -f CMakeFiles/cmTC_be90b.dir/build.make CMakeFiles/cmTC_be90b.dir/build
+make[1]: Entering directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_be90b.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -w -DCHECK_FUNCTION_EXISTS=_fseeki64  -fno-builtin -std=gnu99 -o CMakeFiles/cmTC_be90b.dir/CheckFunctionExists.c.o -c /home/haihem/Bureau/books/vscode/cmake-3.20.2/Modules/CheckFunctionExists.c
+Linking C executable cmTC_be90b
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/Bootstrap.cmk/cmake -E cmake_link_script CMakeFiles/cmTC_be90b.dir/link.txt --verbose=1
+/usr/bin/gcc  -w -DCHECK_FUNCTION_EXISTS=_fseeki64  -fno-builtin CMakeFiles/cmTC_be90b.dir/CheckFunctionExists.c.o -o cmTC_be90b 
+CMakeFiles/cmTC_be90b.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x7): undefined reference to `_fseeki64'
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTC_be90b] Error 1
+make[1]: Leaving directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+make: *** [cmTC_be90b/fast] Error 2
+
+
+
+Determining if the function _get_timezone exists failed with the following output:
+Change Dir: /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_cd188/fast && make  -f CMakeFiles/cmTC_cd188.dir/build.make CMakeFiles/cmTC_cd188.dir/build
+make[1]: Entering directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_cd188.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -w -DCHECK_FUNCTION_EXISTS=_get_timezone  -fno-builtin -std=gnu99 -o CMakeFiles/cmTC_cd188.dir/CheckFunctionExists.c.o -c /home/haihem/Bureau/books/vscode/cmake-3.20.2/Modules/CheckFunctionExists.c
+Linking C executable cmTC_cd188
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/Bootstrap.cmk/cmake -E cmake_link_script CMakeFiles/cmTC_cd188.dir/link.txt --verbose=1
+/usr/bin/gcc  -w -DCHECK_FUNCTION_EXISTS=_get_timezone  -fno-builtin CMakeFiles/cmTC_cd188.dir/CheckFunctionExists.c.o -o cmTC_cd188 
+CMakeFiles/cmTC_cd188.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x7): undefined reference to `_get_timezone'
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTC_cd188] Error 1
+make[1]: Leaving directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+make: *** [cmTC_cd188/fast] Error 2
+
+
+
+Determining if the function _gmtime64_s exists failed with the following output:
+Change Dir: /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_25af1/fast && make  -f CMakeFiles/cmTC_25af1.dir/build.make CMakeFiles/cmTC_25af1.dir/build
+make[1]: Entering directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_25af1.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -w -DCHECK_FUNCTION_EXISTS=_gmtime64_s  -fno-builtin -std=gnu99 -o CMakeFiles/cmTC_25af1.dir/CheckFunctionExists.c.o -c /home/haihem/Bureau/books/vscode/cmake-3.20.2/Modules/CheckFunctionExists.c
+Linking C executable cmTC_25af1
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/Bootstrap.cmk/cmake -E cmake_link_script CMakeFiles/cmTC_25af1.dir/link.txt --verbose=1
+/usr/bin/gcc  -w -DCHECK_FUNCTION_EXISTS=_gmtime64_s  -fno-builtin CMakeFiles/cmTC_25af1.dir/CheckFunctionExists.c.o -o cmTC_25af1 
+CMakeFiles/cmTC_25af1.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x7): undefined reference to `_gmtime64_s'
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTC_25af1] Error 1
+make[1]: Leaving directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+make: *** [cmTC_25af1/fast] Error 2
+
+
+
+Determining if the function _localtime64_s exists failed with the following output:
+Change Dir: /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_a42bb/fast && make  -f CMakeFiles/cmTC_a42bb.dir/build.make CMakeFiles/cmTC_a42bb.dir/build
+make[1]: Entering directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a42bb.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -w -DCHECK_FUNCTION_EXISTS=_localtime64_s  -fno-builtin -std=gnu99 -o CMakeFiles/cmTC_a42bb.dir/CheckFunctionExists.c.o -c /home/haihem/Bureau/books/vscode/cmake-3.20.2/Modules/CheckFunctionExists.c
+Linking C executable cmTC_a42bb
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/Bootstrap.cmk/cmake -E cmake_link_script CMakeFiles/cmTC_a42bb.dir/link.txt --verbose=1
+/usr/bin/gcc  -w -DCHECK_FUNCTION_EXISTS=_localtime64_s  -fno-builtin CMakeFiles/cmTC_a42bb.dir/CheckFunctionExists.c.o -o cmTC_a42bb 
+CMakeFiles/cmTC_a42bb.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x7): undefined reference to `_localtime64_s'
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTC_a42bb] Error 1
+make[1]: Leaving directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+make: *** [cmTC_a42bb/fast] Error 2
+
+
+
+Determining if the function _mkgmtime64 exists failed with the following output:
+Change Dir: /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_eae24/fast && make  -f CMakeFiles/cmTC_eae24.dir/build.make CMakeFiles/cmTC_eae24.dir/build
+make[1]: Entering directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_eae24.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -w -DCHECK_FUNCTION_EXISTS=_mkgmtime64  -fno-builtin -std=gnu99 -o CMakeFiles/cmTC_eae24.dir/CheckFunctionExists.c.o -c /home/haihem/Bureau/books/vscode/cmake-3.20.2/Modules/CheckFunctionExists.c
+Linking C executable cmTC_eae24
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/Bootstrap.cmk/cmake -E cmake_link_script CMakeFiles/cmTC_eae24.dir/link.txt --verbose=1
+/usr/bin/gcc  -w -DCHECK_FUNCTION_EXISTS=_mkgmtime64  -fno-builtin CMakeFiles/cmTC_eae24.dir/CheckFunctionExists.c.o -o cmTC_eae24 
+CMakeFiles/cmTC_eae24.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x7): undefined reference to `_mkgmtime64'
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTC_eae24] Error 1
+make[1]: Leaving directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+make: *** [cmTC_eae24/fast] Error 2
+
+
+
+Determining if the function cygwin_conv_path exists failed with the following output:
+Change Dir: /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_d4389/fast && make  -f CMakeFiles/cmTC_d4389.dir/build.make CMakeFiles/cmTC_d4389.dir/build
+make[1]: Entering directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d4389.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -w -DCHECK_FUNCTION_EXISTS=cygwin_conv_path  -fno-builtin -std=gnu99 -o CMakeFiles/cmTC_d4389.dir/CheckFunctionExists.c.o -c /home/haihem/Bureau/books/vscode/cmake-3.20.2/Modules/CheckFunctionExists.c
+Linking C executable cmTC_d4389
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/Bootstrap.cmk/cmake -E cmake_link_script CMakeFiles/cmTC_d4389.dir/link.txt --verbose=1
+/usr/bin/gcc  -w -DCHECK_FUNCTION_EXISTS=cygwin_conv_path  -fno-builtin CMakeFiles/cmTC_d4389.dir/CheckFunctionExists.c.o -o cmTC_d4389 
+CMakeFiles/cmTC_d4389.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x7): undefined reference to `cygwin_conv_path'
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTC_d4389] Error 1
+make[1]: Leaving directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+make: *** [cmTC_d4389/fast] Error 2
+
+
+
+Performing C SOURCE FILE Test HAVE_STRUCT_VFSCONF failed with the following output:
+Change Dir: /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_04976/fast && make  -f CMakeFiles/cmTC_04976.dir/build.make CMakeFiles/cmTC_04976.dir/build
+make[1]: Entering directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_04976.dir/src.c.o
+/usr/bin/gcc -DHAVE_STRUCT_VFSCONF  -w  -std=gnu99 -o CMakeFiles/cmTC_04976.dir/src.c.o -c /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/src.c
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/src.c:3:33: error: storage size of ‘v’ isn’t known
+ int main(void) { struct vfsconf v; return sizeof(v);}
+                                 ^
+make[1]: *** [CMakeFiles/cmTC_04976.dir/src.c.o] Error 1
+make[1]: Leaving directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+make: *** [cmTC_04976/fast] Error 2
+
+
+Source file was:
+#include <sys/types.h>
+#include <sys/mount.h>
+int main(void) { struct vfsconf v; return sizeof(v);}
+Performing C SOURCE FILE Test HAVE_STRUCT_XVFSCONF failed with the following output:
+Change Dir: /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_8898c/fast && make  -f CMakeFiles/cmTC_8898c.dir/build.make CMakeFiles/cmTC_8898c.dir/build
+make[1]: Entering directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8898c.dir/src.c.o
+/usr/bin/gcc -DHAVE_STRUCT_XVFSCONF  -w  -std=gnu99 -o CMakeFiles/cmTC_8898c.dir/src.c.o -c /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/src.c
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/src.c:3:34: error: storage size of ‘v’ isn’t known
+ int main(void) { struct xvfsconf v; return sizeof(v);}
+                                  ^
+make[1]: *** [CMakeFiles/cmTC_8898c.dir/src.c.o] Error 1
+make[1]: Leaving directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+make: *** [cmTC_8898c/fast] Error 2
+
+
+Source file was:
+#include <sys/types.h>
+#include <sys/mount.h>
+int main(void) { struct xvfsconf v; return sizeof(v);}
+Performing C SOURCE FILE Test MAJOR_IN_MKDEV failed with the following output:
+Change Dir: /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_19d3c/fast && make  -f CMakeFiles/cmTC_19d3c.dir/build.make CMakeFiles/cmTC_19d3c.dir/build
+make[1]: Entering directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_19d3c.dir/src.c.o
+/usr/bin/gcc -DMAJOR_IN_MKDEV  -w  -std=gnu99 -o CMakeFiles/cmTC_19d3c.dir/src.c.o -c /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/src.c
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/src.c:1:23: fatal error: sys/mkdev.h: No such file or directory
+ #include <sys/mkdev.h>
+                       ^
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_19d3c.dir/src.c.o] Error 1
+make[1]: Leaving directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+make: *** [cmTC_19d3c/fast] Error 2
+
+
+Source file was:
+#include <sys/mkdev.h>
+int main() { return major(256); }
+Performing C SOURCE FILE Test HAVE_LZMA_STREAM_ENCODER_MT failed with the following output:
+Change Dir: /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_f9d38/fast && make  -f CMakeFiles/cmTC_f9d38.dir/build.make CMakeFiles/cmTC_f9d38.dir/build
+make[1]: Entering directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f9d38.dir/src.c.o
+/usr/bin/gcc -DHAVE_LZMA_STREAM_ENCODER_MT -I/home/haihem/Bureau/books/vscode/cmake-3.20.2/Utilities/cmliblzma/liblzma/api -w  -std=gnu99 -o CMakeFiles/cmTC_f9d38.dir/src.c.o -c /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_f9d38
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/Bootstrap.cmk/cmake -E cmake_link_script CMakeFiles/cmTC_f9d38.dir/link.txt --verbose=1
+/usr/bin/gcc  -w  CMakeFiles/cmTC_f9d38.dir/src.c.o -o cmTC_f9d38  -lcmliblzma 
+/usr/bin/ld: cannot find -lcmliblzma
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTC_f9d38] Error 1
+make[1]: Leaving directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+make: *** [cmTC_f9d38/fast] Error 2
+
+
+Source file was:
+#include <lzma.h>
+#if LZMA_VERSION < 50020000
+#error unsupported
+#endif
+int main(void){lzma_stream_encoder_mt(0, 0); return 0;}
+Determining if the EFTYPE exist failed with the following output:
+Change Dir: /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_2cc2d/fast && make  -f CMakeFiles/cmTC_2cc2d.dir/build.make CMakeFiles/cmTC_2cc2d.dir/build
+make[1]: Entering directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2cc2d.dir/CheckSymbolExists.c.o
+/usr/bin/gcc   -w  -std=gnu99 -o CMakeFiles/cmTC_2cc2d.dir/CheckSymbolExists.c.o -c /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: ‘EFTYPE’ undeclared (first use in this function)
+   return ((int*)(&EFTYPE))[argc];
+                   ^
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+make[1]: *** [CMakeFiles/cmTC_2cc2d.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+make: *** [cmTC_2cc2d/fast] Error 2
+
+
+File /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <errno.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef EFTYPE
+  return ((int*)(&EFTYPE))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the D_MD_ORDER exist failed with the following output:
+Change Dir: /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_5ae2e/fast && make  -f CMakeFiles/cmTC_5ae2e.dir/build.make CMakeFiles/cmTC_5ae2e.dir/build
+make[1]: Entering directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5ae2e.dir/CheckSymbolExists.c.o
+/usr/bin/gcc   -w  -std=gnu99 -o CMakeFiles/cmTC_5ae2e.dir/CheckSymbolExists.c.o -c /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: ‘D_MD_ORDER’ undeclared (first use in this function)
+   return ((int*)(&D_MD_ORDER))[argc];
+                   ^
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+make[1]: *** [CMakeFiles/cmTC_5ae2e.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+make: *** [cmTC_5ae2e/fast] Error 2
+
+
+File /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <langinfo.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef D_MD_ORDER
+  return ((int*)(&D_MD_ORDER))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Performing C SOURCE FILE Test HAVE_STRUCT_TM___TM_GMTOFF failed with the following output:
+Change Dir: /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_73561/fast && make  -f CMakeFiles/cmTC_73561.dir/build.make CMakeFiles/cmTC_73561.dir/build
+make[1]: Entering directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_73561.dir/src.c.o
+/usr/bin/gcc -DHAVE_STRUCT_TM___TM_GMTOFF  -w  -std=gnu99 -o CMakeFiles/cmTC_73561.dir/src.c.o -c /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/src.c
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/src.c:6:32: error: ‘struct tm’ has no member named ‘__tm_gmtoff’
+   (void)sizeof(((struct tm *)0)->__tm_gmtoff);
+                                ^
+make[1]: *** [CMakeFiles/cmTC_73561.dir/src.c.o] Error 1
+make[1]: Leaving directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+make: *** [cmTC_73561/fast] Error 2
+
+
+Source file was:
+
+#include <time.h>
+
+int main()
+{
+  (void)sizeof(((struct tm *)0)->__tm_gmtoff);
+  return 0;
+}
+
+Performing C SOURCE FILE Test HAVE_STRUCT_STATFS_F_NAMEMAX failed with the following output:
+Change Dir: /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_a2300/fast && make  -f CMakeFiles/cmTC_a2300.dir/build.make CMakeFiles/cmTC_a2300.dir/build
+make[1]: Entering directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a2300.dir/src.c.o
+/usr/bin/gcc -DHAVE_STRUCT_STATFS_F_NAMEMAX  -w  -std=gnu99 -o CMakeFiles/cmTC_a2300.dir/src.c.o -c /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/src.c
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/src.c:7:36: error: dereferencing pointer to incomplete type
+   (void)sizeof(((struct statfs *)0)->f_namemax);
+                                    ^
+make[1]: *** [CMakeFiles/cmTC_a2300.dir/src.c.o] Error 1
+make[1]: Leaving directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+make: *** [cmTC_a2300/fast] Error 2
+
+
+Source file was:
+
+#include <sys/param.h>
+#include <sys/mount.h>
+
+int main()
+{
+  (void)sizeof(((struct statfs *)0)->f_namemax);
+  return 0;
+}
+
+Performing C SOURCE FILE Test HAVE_STRUCT_STAT_ST_BIRTHTIME failed with the following output:
+Change Dir: /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_7a090/fast && make  -f CMakeFiles/cmTC_7a090.dir/build.make CMakeFiles/cmTC_7a090.dir/build
+make[1]: Entering directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7a090.dir/src.c.o
+/usr/bin/gcc -DHAVE_STRUCT_STAT_ST_BIRTHTIME  -w  -std=gnu99 -o CMakeFiles/cmTC_7a090.dir/src.c.o -c /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/src.c
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/src.c:7:34: error: ‘struct stat’ has no member named ‘st_birthtime’
+   (void)sizeof(((struct stat *)0)->st_birthtime);
+                                  ^
+make[1]: *** [CMakeFiles/cmTC_7a090.dir/src.c.o] Error 1
+make[1]: Leaving directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+make: *** [cmTC_7a090/fast] Error 2
+
+
+Source file was:
+
+#include <sys/types.h>
+#include <sys/stat.h>
+
+int main()
+{
+  (void)sizeof(((struct stat *)0)->st_birthtime);
+  return 0;
+}
+
+Performing C SOURCE FILE Test HAVE_STRUCT_STAT_ST_BIRTHTIMESPEC_TV_NSEC failed with the following output:
+Change Dir: /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_4246a/fast && make  -f CMakeFiles/cmTC_4246a.dir/build.make CMakeFiles/cmTC_4246a.dir/build
+make[1]: Entering directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4246a.dir/src.c.o
+/usr/bin/gcc -DHAVE_STRUCT_STAT_ST_BIRTHTIMESPEC_TV_NSEC  -w  -std=gnu99 -o CMakeFiles/cmTC_4246a.dir/src.c.o -c /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/src.c
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/src.c:7:34: error: ‘struct stat’ has no member named ‘st_birthtimespec’
+   (void)sizeof(((struct stat *)0)->st_birthtimespec.tv_nsec);
+                                  ^
+make[1]: *** [CMakeFiles/cmTC_4246a.dir/src.c.o] Error 1
+make[1]: Leaving directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+make: *** [cmTC_4246a/fast] Error 2
+
+
+Source file was:
+
+#include <sys/types.h>
+#include <sys/stat.h>
+
+int main()
+{
+  (void)sizeof(((struct stat *)0)->st_birthtimespec.tv_nsec);
+  return 0;
+}
+
+Performing C SOURCE FILE Test HAVE_STRUCT_STAT_ST_MTIMESPEC_TV_NSEC failed with the following output:
+Change Dir: /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_44bba/fast && make  -f CMakeFiles/cmTC_44bba.dir/build.make CMakeFiles/cmTC_44bba.dir/build
+make[1]: Entering directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_44bba.dir/src.c.o
+/usr/bin/gcc -DHAVE_STRUCT_STAT_ST_MTIMESPEC_TV_NSEC  -w  -std=gnu99 -o CMakeFiles/cmTC_44bba.dir/src.c.o -c /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/src.c
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/src.c:7:34: error: ‘struct stat’ has no member named ‘st_mtimespec’
+   (void)sizeof(((struct stat *)0)->st_mtimespec.tv_nsec);
+                                  ^
+make[1]: *** [CMakeFiles/cmTC_44bba.dir/src.c.o] Error 1
+make[1]: Leaving directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+make: *** [cmTC_44bba/fast] Error 2
+
+
+Source file was:
+
+#include <sys/types.h>
+#include <sys/stat.h>
+
+int main()
+{
+  (void)sizeof(((struct stat *)0)->st_mtimespec.tv_nsec);
+  return 0;
+}
+
+Performing C SOURCE FILE Test HAVE_STRUCT_STAT_ST_MTIME_N failed with the following output:
+Change Dir: /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_7309e/fast && make  -f CMakeFiles/cmTC_7309e.dir/build.make CMakeFiles/cmTC_7309e.dir/build
+make[1]: Entering directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7309e.dir/src.c.o
+/usr/bin/gcc -DHAVE_STRUCT_STAT_ST_MTIME_N  -w  -std=gnu99 -o CMakeFiles/cmTC_7309e.dir/src.c.o -c /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/src.c
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/src.c:7:34: error: ‘struct stat’ has no member named ‘st_mtime_n’
+   (void)sizeof(((struct stat *)0)->st_mtime_n);
+                                  ^
+make[1]: *** [CMakeFiles/cmTC_7309e.dir/src.c.o] Error 1
+make[1]: Leaving directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+make: *** [cmTC_7309e/fast] Error 2
+
+
+Source file was:
+
+#include <sys/types.h>
+#include <sys/stat.h>
+
+int main()
+{
+  (void)sizeof(((struct stat *)0)->st_mtime_n);
+  return 0;
+}
+
+Performing C SOURCE FILE Test HAVE_STRUCT_STAT_ST_UMTIME failed with the following output:
+Change Dir: /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_357eb/fast && make  -f CMakeFiles/cmTC_357eb.dir/build.make CMakeFiles/cmTC_357eb.dir/build
+make[1]: Entering directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_357eb.dir/src.c.o
+/usr/bin/gcc -DHAVE_STRUCT_STAT_ST_UMTIME  -w  -std=gnu99 -o CMakeFiles/cmTC_357eb.dir/src.c.o -c /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/src.c
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/src.c:7:34: error: ‘struct stat’ has no member named ‘st_umtime’
+   (void)sizeof(((struct stat *)0)->st_umtime);
+                                  ^
+make[1]: *** [CMakeFiles/cmTC_357eb.dir/src.c.o] Error 1
+make[1]: Leaving directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+make: *** [cmTC_357eb/fast] Error 2
+
+
+Source file was:
+
+#include <sys/types.h>
+#include <sys/stat.h>
+
+int main()
+{
+  (void)sizeof(((struct stat *)0)->st_umtime);
+  return 0;
+}
+
+Performing C SOURCE FILE Test HAVE_STRUCT_STAT_ST_MTIME_USEC failed with the following output:
+Change Dir: /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_a4cfa/fast && make  -f CMakeFiles/cmTC_a4cfa.dir/build.make CMakeFiles/cmTC_a4cfa.dir/build
+make[1]: Entering directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a4cfa.dir/src.c.o
+/usr/bin/gcc -DHAVE_STRUCT_STAT_ST_MTIME_USEC  -w  -std=gnu99 -o CMakeFiles/cmTC_a4cfa.dir/src.c.o -c /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/src.c
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/src.c:7:34: error: ‘struct stat’ has no member named ‘st_mtime_usec’
+   (void)sizeof(((struct stat *)0)->st_mtime_usec);
+                                  ^
+make[1]: *** [CMakeFiles/cmTC_a4cfa.dir/src.c.o] Error 1
+make[1]: Leaving directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+make: *** [cmTC_a4cfa/fast] Error 2
+
+
+Source file was:
+
+#include <sys/types.h>
+#include <sys/stat.h>
+
+int main()
+{
+  (void)sizeof(((struct stat *)0)->st_mtime_usec);
+  return 0;
+}
+
+Performing C SOURCE FILE Test HAVE_STRUCT_STAT_ST_FLAGS failed with the following output:
+Change Dir: /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_005aa/fast && make  -f CMakeFiles/cmTC_005aa.dir/build.make CMakeFiles/cmTC_005aa.dir/build
+make[1]: Entering directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_005aa.dir/src.c.o
+/usr/bin/gcc -DHAVE_STRUCT_STAT_ST_FLAGS  -w  -std=gnu99 -o CMakeFiles/cmTC_005aa.dir/src.c.o -c /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/src.c
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/src.c:7:34: error: ‘struct stat’ has no member named ‘st_flags’
+   (void)sizeof(((struct stat *)0)->st_flags);
+                                  ^
+make[1]: *** [CMakeFiles/cmTC_005aa.dir/src.c.o] Error 1
+make[1]: Leaving directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+make: *** [cmTC_005aa/fast] Error 2
+
+
+Source file was:
+
+#include <sys/types.h>
+#include <sys/stat.h>
+
+int main()
+{
+  (void)sizeof(((struct stat *)0)->st_flags);
+  return 0;
+}
+
+Performing C SOURCE FILE Test HAVE_STRUCT_STATVFS_F_IOSIZE failed with the following output:
+Change Dir: /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_462d4/fast && make  -f CMakeFiles/cmTC_462d4.dir/build.make CMakeFiles/cmTC_462d4.dir/build
+make[1]: Entering directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_462d4.dir/src.c.o
+/usr/bin/gcc -DHAVE_STRUCT_STATVFS_F_IOSIZE  -w  -std=gnu99 -o CMakeFiles/cmTC_462d4.dir/src.c.o -c /home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/src.c
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp/src.c:7:37: error: ‘struct statvfs’ has no member named ‘f_iosize’
+   (void)sizeof(((struct statvfs *)0)->f_iosize);
+                                     ^
+make[1]: *** [CMakeFiles/cmTC_462d4.dir/src.c.o] Error 1
+make[1]: Leaving directory `/home/haihem/Bureau/books/vscode/cmake-3.20.2/CMakeFiles/CMakeTmp'
+make: *** [cmTC_462d4/fast] Error 2
+
+
+Source file was:
+
+#include <sys/types.h>
+#include <sys/statvfs.h>
+
+int main()
+{
+  (void)sizeof(((struct statvfs *)0)->f_iosize);
+  return 0;
+}
+
+Looking for a Fortran compiler failed with the following output:
+CMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 2.8.12 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+-- The Fortran compiler identification is unknown
+CMake Error at CMakeLists.txt:2 (project):
+  No CMAKE_Fortran_COMPILER could be found.
+
+  Tell CMake where to find the compiler by setting either the environment
+  variable "FC" or the CMake cache entry CMAKE_Fortran_COMPILER to the full
+  path to the compiler, or to the compiler name if it is in the PATH.
+
+
+-- Configuring incomplete, errors occurred!
+See also "/home/haihem/Bureau/books/vscode/cmake-3.20.2/Tests/CMakeFiles/CheckFortran/CMakeFiles/CMakeOutput.log".
+See also "/home/haihem/Bureau/books/vscode/cmake-3.20.2/Tests/CMakeFiles/CheckFortran/CMakeFiles/CMakeError.log".
+
